@@ -167,15 +167,21 @@ function showProject(index) {
         }
     }
     
-    var content = sections[index].content;
+    var blocks = sections[index].blocks;
     var template = '';
-    
-    content.forEach(function(item) {
+
+		blocks.forEach(function(block) {
+			template += '<div style="background-color: ' + block.background + '; color: ' + block.textColor + '; padding: ' + block.padding + ';">';
+
+			block.content.forEach(function(item) {
         if (item.includes('./img')) {
             template += '<img src="' + item + '">';
         } else {
-            template += '<p>' + item + '</p>';
+            template += item;
         }
+			});
+
+			template += '</div>';
     });
     
     $('#project-content').html(template);
