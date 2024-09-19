@@ -337,12 +337,12 @@ strong {
 	margin-bottom: 0;
 }
 #project-overlay {
-    background: white;
+	background: white;
 	display: none;
 	height: 100%;
-    margin-top: 20px;
+  margin-top: 20px;
 	opacity: 0;
-    overflow-y: auto;
+  overflow-y: auto;
 	position: fixed;
 	width: 100%;
 	top:0;
@@ -376,6 +376,7 @@ strong {
 }
 
 #project-content {
+		line-height: 1.8;
     margin: 0 auto;
     max-width: 860px;
     padding: 112px;
