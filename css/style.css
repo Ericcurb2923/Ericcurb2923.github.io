@@ -382,6 +382,15 @@ strong {
     padding: 112px;
 }
 
+#project-content h1,
+#project-content h2,
+#project-content h3,
+#project-content h4,
+#project-content h5,
+#project-content h6 {
+	letter-spacing: 0.7px;
+}
+
 #project-content img {
     width: 100%;
 }
