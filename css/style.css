@@ -396,6 +396,7 @@ strong {
 #project-content h4,
 #project-content h5,
 #project-content h6 {
+	font-weight: 500;
 	letter-spacing: 0.7px;
 }
 
