@@ -194,7 +194,7 @@ on your next project. Contact to review case studies.&nbsp;<a href="javascript:v
 	#home-hero {
 		align-items: center;
 		background-color: #111111;
-		color: #FFFFFF;
+		color: #DBDBDB;
 		display: flex;
 		height: 100%;
 	}
@@ -207,6 +207,7 @@ on your next project. Contact to review case studies.&nbsp;<a href="javascript:v
 	}
 
 	#home-container h1 {
+		color: #FFFFFF;
 		font-size: 56px;
 		font-weight: 300;
 		line-height: 1.3;
@@ -225,7 +226,7 @@ on your next project. Contact to review case studies.&nbsp;<a href="javascript:v
 	}
 
 	#home-projects li a {
-		color: #FFFFFF;
+		color: #DBDBDB;
 		display: block;
 		overflow: hidden;
 		position: relative;
@@ -233,7 +234,8 @@ on your next project. Contact to review case studies.&nbsp;<a href="javascript:v
 	}
 
 	#home-projects li a::after {
-		background-color: #FFFFFF;
+		background-color: #DBDBDB;
+		;
 		bottom: 0;
 		content: '';
     position: absolute;
@@ -260,8 +262,17 @@ on your next project. Contact to review case studies.&nbsp;<a href="javascript:v
 	}
 
 	.home-transition {
-		margin-left: -20px;
+		margin-top: 20px;
 		opacity: 0;
+	}
+
+	.home-transition:not(:last-child) {
+		margin-bottom: -20px;
+	}
+
+	#home-container h1.home-transition {
+		margin-top: 68px;
+		margin-bottom: 28px;
 	}
 
 	@media only screen and (max-width: 1024px) {
