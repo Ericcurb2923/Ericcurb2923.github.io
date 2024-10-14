@@ -37,6 +37,12 @@ function onImageClick(j) {
     });
 }
 
+function onHomeLinkClick(j) {
+	$('.home-link-' + j).click(function() {
+			showProject(j);
+	});
+}
+
 function preloadImages(srcs, imgs, callback) {
 	if (srcs.length == 0) {
 		onLoad();
@@ -65,6 +71,24 @@ function onLoad() {
 	setTimeout( function() {
 			fadeIn('img');
 		}, 300
+	);
+
+	// 2024 redesign
+	$('#home-hero').removeClass('home-hero-transition');
+
+	setTimeout( function() {
+		$('#home-container div').removeClass('home-transition');
+		}, 300
+	);
+
+	setTimeout( function() {
+		$('#home-container h1').removeClass('home-transition');
+		}, 600
+	);
+
+	setTimeout( function() {
+		$('#home-projects').removeClass('home-transition');
+		}, 900
 	);
 }
 
@@ -96,6 +120,10 @@ function load() {
                     
                     if (section.theme == 'light') { $('.section-' + j).addClass('light') };
                     onImageClick(j);
+
+										// 2024 Redesign
+										$('#home-projects').append('<li><a class="home-link-' + j + '">' + section.title + '</a></li>');
+										onHomeLinkClick(j);
 				}
 				
 				var imageSrc = [];
