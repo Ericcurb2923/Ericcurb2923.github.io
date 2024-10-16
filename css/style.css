@@ -402,12 +402,12 @@ strong {
 
 #project-content p {
 	margin-top: 22px;
-	margin-bottom: 36px;
+	margin-bottom: 22px;
 }
 
 #project-content img {
 		margin-top: 16px;
-		margin-bottom: 32px;
+		margin-bottom: 22px;
     width: 100%;
 }
 
@@ -435,6 +435,11 @@ strong {
 /*#project-content p {
     line-height: 2em;
 }*/
+
+#project-content ol,
+#project-content ul {
+	padding-left: 1rem;
+}
 
 /* light theme */
 .light,
