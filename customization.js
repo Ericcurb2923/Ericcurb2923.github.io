@@ -67,9 +67,9 @@ var sections = [
                     '<h3>Outcome</h3>',
 
                     '<ol>',
-                    '<li>30% increase in performance, accessibility, and SEO</li>',
                     '<li>Adoption of a mobile first approach and responsive grid system</li>',
                     '<li>New CMS and reduction of time to market from 3 days to 1 </li>',
+                    '<li>30% increase in performance, accessibility, and SEO</li>',
                     '<li>2% increase in start rate goal achieved</li>',
                     '</ol>',
                     "<a href='https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-Case-Study?page-id=0%3A1&node-id=1-7&viewport=542%2C575%2C0.25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed'>View TaxAct case study</a>",
