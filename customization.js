@@ -149,36 +149,5 @@ var sections = [
         ],
     },
 
-    {
-        color: '#FFFFFF',
-        theme: 'light',
-        title: 'Ethos',
-        image: './img/EthosCS.png',
-        imageAccessibilityText: 'Ethos Case Study',
-        subtitle: 'Video Chat',
-        //"description": "<p></p>",
-        //"dribbble": "",
-        contentTheme: 'light',
-        blocks: [
-            {
-                background: '#FFFFFF',
-                padding: '0px',
-                textColor: '',
-                content: [
-                    './img/EthosCS.png',
-                    '<h3>Problem</h3>',
-
-                    '<p>There’s currently no essential guide or lifestyle website that appeals to clothing, health, podcast, or informative articles that focus on the holistic person.</p>',
-                    '<h3>Solution</h3>',
-
-                    '<p>Creating Ethos as brand that inspires and unites communities through philosophy, culture, health, and lifestyles.</p>',
-                    '<h3>Outcome</h3>',
-
-                    '<p>Qualitative testing In progress.</p>',
-
-                    "<a href='https://www.figma.com/deck/tOUddoMJFGLBbyg1nvqjRc/Ethos-CS?node-id=1-75&node-type=slide&viewport=-178%2C-121%2C1&t=E1rfjoSG68nEGDNh-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'>View Ethos case study</a>",
-                ],
-            },
-        ],
-    },
+    
 ];
