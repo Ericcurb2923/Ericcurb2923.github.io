@@ -222,6 +222,7 @@ ol, ul {
 }
 
 .project-image {
+    max-width: 525px;
     width: 50%;
     z-index: 1;
 }
@@ -320,6 +321,7 @@ ol, ul {
 
     .project-image {
         margin-bottom: 32px;
+        max-width: none;
         width: 100%;
     }
 
