@@ -1,153 +1,202 @@
-var follow = 'https://www.instagram.com/ericacurb/';
-var chat = 'info@curb.ws';
-var cv = true;
-var download = 'http://curb.ws/ECResumeExtended.pdf';
-var sections = [
+var projects = [
     {
-        color: '#FFFFFFF',
-        theme: 'light',
-        title: 'Westlaw',
-        image: './img/Westlaw.png',
-        imageAccessibilityText: 'Westlaw iOS App',
-        subtitle: 'iOS Apps',
-        //"description": "<p></p>",
-        //"dribbble": "",
-        contentTheme: 'light',
-        blocks: [
+        name: `Beacon - RentSpree`,
+        description:
+            `Crafting a design language for a PropTech app by establishing their design system`,
+        image: './img/BeaconHeroD.png',
+        caseStudy: '',
+        sections: [
             {
-                background: '#FFFFFF',
-                padding: '0',
-                textColor: '',
-                content: [
-                    './img/Westlaw.png',
+                label: 'Problem',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        RentSpree connects landlords, agents, and renters, but its previous design system lacked cohesion, slowing consistency, speed to market, and product improvements. Beacon now serves as a clear unified design guide, offering reusable, scalable components that enhance RentSpree’s brand and product. The process below described how it came together.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/BeaconCollageD.png">
+                    <img class="mobile-only" src="./img/BeaconCollageM.png">
+                </div>`,
+            },
+            {
+                label: 'Solution',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        The design system strategy focused on building a unified framework that helps teams deliver consistent, user-friendly experiences. By creating a single source of truth for design components and guidelines, it improves collaboration, streamlines workflows, and ensures a cohesive brand across platforms. I prioritized flexibility, accessibility, and efficiency to adapt to user needs while maintaining a professional design. My strategy as the UX Design Lead is as follows:
+                    </p>
 
-                    '<h3>Problem</h3>',
+                    <ol>
+                        <li>Evaluate (Colors, Icons, UI Patterns, Accessibility)</li>
+                        <li>Shape vision (Create design language and principles)</li>
+                        <li>Create library (Typography, Color Palette, Patterns/Components, Assets)</li>
+                        <li>Unify as one (Style & Usage guidance, Component library, Team governance)</li>
+                    </ol>
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#212121',
+                textColor: '#ffffff',
+                content: `<div>
+                    <p>
+                        Beacon created a clear design language that improves user experience with easy-to-use scalable components and guidelines for RentSpree. A governance process was introduced to ensure all elements are functional and user-friendly through UX and Dev reviews. This design system has also increased cross functional collaboration ensuring consistency and an elevated product quality that support RentSpree's goal of simplifying the rental experience for all users.
+                    </p>
 
-                    '<p>Most legal research is done on desktops, but users seek a mobile experience to stay connected and Thomson Reuters Westlaw, lacked an app that meet the need.</p>',
-                    '<h3>Solution</h3>',
-
-                    '<p>Creating a native app that’s an extension of the Westlaw’s desktop experience is optimal. This will allow legal service companies, law practices, higher education and government employees to stay connected Thomson Reuters Westlaw’s core features from anywhere anytime.</p>',
-                    '<h3>Outcome</h3>',
-
-                    '<ol>',
-                    '<li>Scalable core product features</li>',
-                    '<li>Seven additional feature enhancements</li>',
-                    '<li>15 Awards for Best Legal Research App</li>',
-                    '</ol>',
-                    "<a href='https://www.figma.com/proto/qESLRga2Goq4UJSbxCrygs/Westlaw-CS?page-id=0%3A1&node-id=1-24&p=f&viewport=383%2C445%2C0.25&t=OBAbaTxLmy9QLfuS-1&scaling=min-zoom&content-scaling=fixed'>View Westlaw on iOS case study</a>",
-                ],
+                    <img class="desktop-only" src="./img/BeaconMocksD.png">
+                    <img class="mobile-only" src="./img/BeaconDSDM.png">
+                    <img class="mobile-only" src="./img/BeaconMocksM.png">
+                </div>`,
             },
         ],
     },
 
     {
-        color: '#FFFFFFF',
-        theme: 'light',
-        title: 'TaxAct',
-        image: './img/MainT.png',
-        imageAccessibilityText: 'TaxAct',
-        subtitle: 'TaxAct',
-        //"description": "<p></p>",
-        //"dribbble": "",
-        contentTheme: 'light',
-        blocks: [
+        name: `Thomson Reuters Westlaw`,
+        description:
+            `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
+        image: './img/WestlawCarouselD.png',
+        caseStudy: 'https://www.figma.com/proto/qESLRga2Goq4UJSbxCrygs/Westlaw-CS?page-id=0%3A1&node-id=1-24&p=f&viewport=383%2C445%2C0.25&t=OBAbaTxLmy9QLfuS-1&scaling=min-zoom&content-scaling=fixed',
+        sections: [
             {
-                background: '#FFFFFF',
-                padding: '0',
-                textColor: '',
-                content: [
-                    './img/MainT.png',
+                label: 'Problem',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        Westlaw is an online legal research service and database for legal professionals in over 60 countries. While most research is conducted on desktops, users sought a mobile solution. Since Thomson Reuters Westlaw did not offer an app to meet this demand, we explored how to adapt Westlaw's desktop experience into a new iPhone app. The following showcases a few selected wireframes that were tested and the outlined approach.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/WestlawWiresD.png">
+                    <img class="mobile-only" src="./img/WestlawWiresM.png">
+                </div>`,
+            },
+            {
+                label: 'Solution',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        To provide a clear and organized pathway to legal information, insights and pain points were collected from surveys and interviews with lawyers, paralegals, and librarians. This effort had several objectives: Identify target users, leverage desktop UX, understand features, align iPad app with new iPhone app.
+                    </p>
 
-                    '<h3>Problem</h3>',
+                    <p>
+                        As the UX Design Lead, I partnered with three researchers, five QA team members, three product owners and eight engineers to analyze the data, design wireframes, high fidelity concepts and test prototypes. We reviewed user analytics based on device usage and engaged users including law firms with high fidelity prototypes to ensure product features met their needs. The survey feedback determined core features and attributes that users valued the most.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/WestlawDataD.png">
+                    <img class="mobile-only" src="./img/WestlawDataM.png">
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        The research conducted for the new Westlaw iPhone app provided crucial insights into user preferences, opportunities for simplifying the user experience, and strategies for creating a scalable product. The approach involved generative and qualitative methods, including surveys, navigation testing, wireframing, prototype testing, and A/B testing. The research revealed that iOS is the preferred operating system among users and identified essential features, such as:
+                    </p>
 
-                    '<p>Unclear reasons to buy and inconsistent UI patterns have increased user drop-off, resulting in lower SUS and NPS scores.</p>',
-                    '<h3>Solution</h3>',
+                    <ol>
+                        <li>Search functionality for quick access to information.</li>
+                        <li>Document Display for easy reading and navigation.</li>
+                        <li>News & Analysis to keep users informed about the latest developments.</li>
+                        <li>The ability to follow specific practice areas or companies for tailored updates.</li>
+                    </ol>
 
-                    '<p>Creating a scalable framework and process for the shopping experience while highlighting the product’s value, and minimizing authentication friction.</p>',
-                    '<h3>Outcome</h3>',
+                    <p>
+                        The iOS apps addressed the needs for legal services companies, law practices, government employees, and educational institutions, through organized access to legal information from Westlaw anywhere. As a result, the Westlaw iPhone app won over 13 awards for the best legal research app. Select the case study link for a in depth analysis of the full process. Also view in Apple’s App Store.
+                    </p>
 
-                    '<ol>',
-                    '<li>Adoption of a mobile first approach and responsive grid system</li>',
-                    '<li>New CMS and reduction of time to market from 3 days to 1 </li>',
-                    '<li>30% increase in performance, accessibility, and SEO</li>',
-                    '<li>2% increase in start rate goal achieved</li>',
-                    '</ol>',
-                    "<a href='https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-Case-Study?page-id=0%3A1&node-id=1-7&viewport=542%2C575%2C0.25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed'>View TaxAct case study</a>",
-                ],
+                    <img class="desktop-only" src="./img/WestlawFMD.png">
+                    <img class="mobile-only" src="./img/WestlawFMM.png">
+                </div>`,
             },
         ],
     },
 
     {
-        color: '#FFFFFF',
-        theme: 'light',
-        title: 'Path.ai',
-        image: './img/Pathai.png',
-        imageAccessibilityText: 'Path.ai',
-        subtitle: 'AI',
-        //"description": "<p></p>",
-        //"dribbble": "",
-        contentTheme: 'light',
-        blocks: [
+        name: `TaxAct -  Shopping Experience`,
+        description:
+            `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
+        image: './img/TaxActHeroD.png',
+        caseStudy: 'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
+        sections: [
             {
-                background: '#FFFFFF',
-                padding: '0',
-                textColor: '',
-                content: [
-                    './img/Pathai.png',
+                label: 'Problem',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        TaxAct offers software specifically designed to assist users in efficiently preparing and filing their taxes, catering to both individuals and businesses. While it provides a variety of packages tailored to different tax situations, the platform’s unclear reasons to buy and inconsistent UI design patterns that have increased user drop-off rates, resulting in lower SUS and NPS ratings. Below are TaxAct’s charted scores and identified start rate drivers from the research.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/TaxActDataD.png">
+                    <img class="mobile-only" src="./img/TaxActDataM.png">
+                </div>`,
+            },
+            {
+                label: 'Solution',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        The four key objectives were: Improve authentication, align on start rate drivers that can increase user confidence and convenience, highlight advantages compared to competitors, and allow our product to convert new and retain current customers. We chose the Double Diamond design process model to research, create and valid concepts for production.
+                    </p>
 
-                    '<h3>Problem</h3>',
+                    <p>
+                        As the UX Design Lead, my focus was design strategy, creating a mobile first approach, user research, prototyping, A/B testing and design. I partnered with two researchers, three engineers, two QA team members and the product owner for five months. Below is the design strategy.
+                    </p>
 
-                    '<p>The traditional retirement planning process can be cumbersome, impersonal, and inefficient. Existing services often fail to consider the unique financial situations and goals of individuals, lacking personalized advice that integrates various financial aspects such as income, expenses, risk tolerance, and longevity planning.</p>',
-                    '<h3>Solution</h3>',
+                    <img class="desktop-only" src="./img/TaxActStrategyD.png">
+                    <img class="mobile-only" src="./img/TaxActStrategyM.png">
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#f4f5f8',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        The success of the project was measured by user conversion rates and confidence in our product's ability to have clear value props. By creating a scalable, user-friendly homepage, and integrating user feedback with our start rate drivers, we achieved a 30% improvement in performance, accessibility, best practices, and SEO. This directly contributed to reaching our goal of a 2% increase in start rate.
+                    </p>
+                    </ol>
 
-                    "<p>Creating Path.ai, a comprehensive retirement planning service that includes personalized plans based on a user's projected income, expenses, assets, liabilities, and risk tolerance is the goal. Path's AI system provides advice on pension optimization, healthcare planning, social security benefits, and longevity considerations, integrating these with educational resources to foster informed decision-making.</p>",
-                    '<h3>Outcome</h3>',
+                    <p>
+                        The mobile-first approach I created was embraced and implemented into a responsive grid system, which established a cohesive design language for future product features and provided a flexible framework for secondary and tertiary pages. This also enabled our team to integrated a CMS for the homepage, landing and partnership pages. This transition dramatically reduced our time to market and enabled us to deliver scalable, high-quality designs more efficiently. Select the case study link for a in depth analysis of the full process.
+                    </p>
 
-                    '<ol>',
-                    '<li>AI technology</li>',
-                    '<li>E-Learning Plan</li>',
-                    '</ol>',
-                    "<a href='mailto:info@curb.ws'>Contact for case study</a>",
-                ],
+                    <img class="desktop-only" src="./img/TaxActFMD.png">
+                    <img class="mobile-only" src="./img/TaxActFMM.png">
+                </div>`,
             },
         ],
     },
-    {
-        color: '#FFFFFF',
-        theme: 'light',
-        title: 'Beacon',
-        image: './img/BeaconDS.png',
-        imageAccessibilityText: 'Match Video Chat',
-        subtitle: 'Video Chat',
-        //"description": "<p></p>",
-        //"dribbble": "",
-        contentTheme: 'light',
-        blocks: [
-            {
-                background: '#FFFFFF',
-                padding: '0px',
-                textColor: '',
-                content: [
-                    './img/BeaconDS.png',
-                    '<h3>Problem</h3>',
-
-                    '<p>The current design system lacks guidelines, a cohesive design language, and reusable patterns, hindering product consistency, time to market and limits user experience enhancements.</p>',
-                    '<h3>Solution</h3>',
-
-                    '<p>Producing a design system that unifies visual language, reduces design debt, streamlines the design and development process, and elevates product quality.</p>',
-                    '<h3>Outcome</h3>',
-
-                    '<ol>',
-                    '<li>A thoughtful design language</li>',
-                    '<li>Scalable components and guidelines</li>',
-                    '<li>Elevated product quality</li>',
-                    '</ol>',
-                    "<a href='mailto:info@curb.ws'>Contact for case study</a>",
-                ],
-            },
-        ],
-    },
-
-    
 ];
