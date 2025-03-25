@@ -307,8 +307,8 @@ ol, ul {
     }
 
     .header.scroll .content {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .content {
@@ -349,7 +349,7 @@ ol, ul {
 
     .project-image {
         margin-bottom: 32px;
-        max-width: none;
+        max-width: 320px;
         width: 100%;
     }
 
