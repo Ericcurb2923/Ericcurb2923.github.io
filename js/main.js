@@ -54,7 +54,7 @@ function load() {
 
         let projectHTML = `<div id="project-${index}" class="project ease">
             <div class="header">
-                <div class="content">
+                <div class="content ease">
                     <div class="back"></div>
                     ${caseStudyHTML}
                 </div>
@@ -140,6 +140,14 @@ function load() {
         setTimeout(function () {
             $project.removeClass('active easeout').css('display', '');
         }, 610);
+    });
+
+    $(document).on('scroll', function () {
+        if ($(document).scrollTop() > 0) {
+            $('.header').addClass('scroll');
+        } else {
+            $('.header').removeClass('scroll');
+        }
     });
 }
 

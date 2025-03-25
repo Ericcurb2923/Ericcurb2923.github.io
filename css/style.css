@@ -39,11 +39,28 @@ ol, ul {
 
 .header a {
     color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.header a::after {
+    border-bottom: 1px solid #ffffff;
+    bottom: 12px;
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .header .content {
     display: flex;
     justify-content: space-between;
+}
+
+.header.scroll .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .back {
@@ -61,7 +78,7 @@ ol, ul {
 .content {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 60px;
+    padding: 100px;
 }
 
 .section img {
@@ -197,18 +214,18 @@ ol, ul {
 .project-hero .content {
     display: flex;
     justify-content: flex-end;
-    padding-top: 200px;
+    padding-top: 260px;
     padding-bottom: 0;
     position: relative;
 }
 
 .project-details {
-    bottom: calc(50% - 1vw);
+    bottom: calc(50% - 3vw);
     color: #ffffff;
-    left: 60px;
+    left: 100px;
     position: absolute;
     transform: translateY(50%);
-    width: 40%;
+    width: 35%;
 }
 
 .project-name {
@@ -240,13 +257,14 @@ ol, ul {
     border-radius: 18px;
     color: #212121;
     display: inline-block;
+    font-size: 18px;
     font-weight: 400;
     padding: 0 20px;
 }
 
 @media only screen and (max-width: 1200px) {
     .project-details {
-        bottom: calc(50% - 4vw);
+        bottom: calc(50% - 5vw);
     }
 
     .project-name {
@@ -282,6 +300,11 @@ ol, ul {
 
     .mobile-only {
         display: block;
+    }
+
+    .header.scroll .content {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .content {
@@ -330,6 +353,7 @@ ol, ul {
     }
 
     .label {
-        margin-bottom: 15px;
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 }
