@@ -218,7 +218,7 @@ ul {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 20%;
+    margin-top: 80px;
     margin-bottom: 10%;
 }
 
@@ -384,6 +384,10 @@ ul {
     text-decoration: none;
 }
 
+.project .content {
+    padding-bottom: 80px;
+}
+
 .project-details {
     background-color: #212121;
     bottom: calc(50% - 3vw);
@@ -511,6 +515,10 @@ ul {
     .project-hero.about .content > div {
         min-width: 0;
         width: 100%;
+    }
+
+    .project .content {
+        padding-bottom: 24px;
     }
 
     .project-details {

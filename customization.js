@@ -43,8 +43,8 @@ const projects = [
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/BeaconCollageD.png">
-                    <img class="mobile-only" src="./img/BeaconCollageM.png">
+                    <img class="desktop-only" src="./img/BeaconCollageD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/BeaconCollageM.png" style="margin-top: 1em">
                 </div>`,
             },
             {
@@ -106,8 +106,8 @@ const projects = [
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/WestlawWiresD.png">
-                    <img class="mobile-only" src="./img/WestlawWiresM.png">
+                    <img class="desktop-only" src="./img/WestlawWiresD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/WestlawWiresM.png" style="margin-top: 1em">
                 </div>`,
             },
             {
@@ -128,8 +128,8 @@ const projects = [
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/WestlawDataD.png">
-                    <img class="mobile-only" src="./img/WestlawDataM.png">
+                    <img class="desktop-only" src="./img/WestlawDataD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/WestlawDataM.png" style="margin-top: 1em">
                 </div>`,
             },
             {
@@ -183,8 +183,8 @@ const projects = [
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/TaxActDataD.png">
-                    <img class="mobile-only" src="./img/TaxActDataM.png">
+                    <img class="desktop-only" src="./img/TaxActDataD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/TaxActDataM.png" style="margin-top: 1em">
                 </div>`,
             },
             {
