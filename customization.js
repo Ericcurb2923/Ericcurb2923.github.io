@@ -76,7 +76,6 @@ const projects = [
                     </p>
 
                     <img class="desktop-only" src="./img/BeaconMocksD.png">
-                    <img class="mobile-only" src="./img/BeaconDSDM.png">
                     <img class="mobile-only" src="./img/BeaconMocksM.png">
                 </div>`,
             },
