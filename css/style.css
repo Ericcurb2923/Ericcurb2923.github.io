@@ -366,7 +366,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     padding-top: 260px;
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
     position: relative;
 }
 
