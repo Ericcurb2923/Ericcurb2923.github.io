@@ -1,9 +1,32 @@
-var projects = [
+const siteTitle = `curb`;
+const siteDescription = `Driven by insights to convey ideas in creative spaces.`;
+const carouselInterval = 5;
+
+const about = `<div>
+    <p>
+        Multidisciplinary Designer...
+    </p>
+
+    <br/>
+
+    <p>
+        with experience collaborating with outstanding teams and clients across a diverse range of projects. My expertise includes full branding, desktop and mobile app design, information architecture, wireframing, prototyping, and creating design systems, all grounded in thorough user research. In addition, I have successfully defined, coordinated, and managed the UX process within Agile environments for both onshore and offshore teams working on B2B and B2C SaaS products. My approach integrates systems and atomic design with design thinking, utilizing tools like Figma and  Adobe’s product suite to enhance the design process.
+    </p>
+
+    <p>
+        <a href="mailto:info@curb.ws">
+            info@curb.ws
+        </a>
+    </p>
+</div>`;
+
+const projects = [
     {
+        menuName: `Beacon`,
         name: `Beacon - RentSpree`,
-        description:
-            `Crafting a design language for a PropTech app by establishing their design system`,
-        image: './img/BeaconHeroD.png',
+        description: `Crafting a design language for a PropTech app by establishing their design system`,
+        carouselImage: './img/BeaconCarouselD.png',
+        heroImage: './img/BeaconHeroD.png',
         caseStudy: '',
         sections: [
             {
@@ -61,11 +84,13 @@ var projects = [
     },
 
     {
+        menuName: `Westlaw`,
         name: `Thomson Reuters Westlaw`,
-        description:
-            `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
-        image: './img/WestlawCarouselD.png',
-        caseStudy: 'https://www.figma.com/proto/qESLRga2Goq4UJSbxCrygs/Westlaw-CS?page-id=0%3A1&node-id=1-24&p=f&viewport=383%2C445%2C0.25&t=OBAbaTxLmy9QLfuS-1&scaling=min-zoom&content-scaling=fixed',
+        description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
+        carouselImage: './img/WestlawCarousel.png',
+        heroImage: './img/WestlawCarouselD.png',
+        caseStudy:
+            'https://www.figma.com/proto/qESLRga2Goq4UJSbxCrygs/Westlaw-CS?page-id=0%3A1&node-id=1-24&p=f&viewport=383%2C445%2C0.25&t=OBAbaTxLmy9QLfuS-1&scaling=min-zoom&content-scaling=fixed',
         sections: [
             {
                 label: 'Problem',
@@ -136,11 +161,13 @@ var projects = [
     },
 
     {
+        menuName: `TaxAct`,
         name: `TaxAct -  Shopping Experience`,
-        description:
-            `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
-        image: './img/TaxActHeroD.png',
-        caseStudy: 'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
+        description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
+        carouselImage: './img/TaxActCarouselD.png',
+        heroImage: './img/TaxActHeroD.png',
+        caseStudy:
+            'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
         sections: [
             {
                 label: 'Problem',

@@ -22,30 +22,39 @@ function preloadImages(srcs, imgs, callback) {
 }
 
 function onLoad() {
-    $('#home-hero').removeClass('home-hero-transition');
-
-    setTimeout(function () {
-        $('#home-container div').removeClass('home-transition');
-    }, 300);
-
-    setTimeout(function () {
-        $('#home-container h1').removeClass('home-transition');
-    }, 600);
-
-    setTimeout(function () {
-        $('#home-projects').removeClass('home-transition');
-    }, 900);
+    $('#home').css({ 'margin-top': '0', opacity: '1' });
 }
 
 function load() {
+    $('#logo').text(siteTitle);
+    $('#home h1').text(siteDescription);
+
+    let menu = [];
+
     $.each(projects, function (index, project) {
-        $('#home-projects').append(
-            `<li>
-                <a class="project-link-${index}">
-                    ${project.name}
-                </a>
-            </li>`
+        menu.push(`<li class="project-link-${index}">
+            ${project.menuName}
+        </li>`);
+
+        $('.carousel').append(
+            `<div class="carousel-slide" slide-index="${index}">
+                <img src="${project.carouselImage}" class="project-link-${index} desktop-only" alt="${project.name}: ${project.description}" role="button">
+                <div class="mobile-only">
+                    <img src="${project.heroImage}" class="project-link-${index}" role="button">
+                    <div class="project-details">
+                        <p class="project-name ease">${project.name}</p>
+                        <p class="project-description ease">${project.description}</p>
+                    </div>
+                </div>
+            </div>`
         );
+
+        $('.timer').append(`
+            <div class="timer-bubble" slide-index="${index}">
+                <div class="timer-container"></div>
+                <div class="timer-value"></div>
+            </div>
+        `);
 
         const caseStudyHTML =
             project.caseStudy != ''
@@ -55,7 +64,7 @@ function load() {
         let projectHTML = `<div id="project-${index}" class="project ease">
             <div class="header">
                 <div class="content ease">
-                    <div class="back"></div>
+                    <div class="back" role="button"></div>
                     ${caseStudyHTML}
                 </div>
             </div>
@@ -66,7 +75,7 @@ function load() {
                         <p class="project-name ease">${project.name}</p>
                         <p class="project-description ease">${project.description}</p>
                     </div>
-                    <img class="project-image" src="${project.image}">
+                    <img class="project-image" src="${project.heroImage}">
                 </div>
             </div>`;
 
@@ -116,6 +125,22 @@ function load() {
         $('body').append(projectHTML + '</div>');
     });
 
+    $('body').append(`<div id="project-${projects.length}" class="project ease">
+        <div class="header">
+            <div class="content ease">
+                <div class="back" role="button"></div>
+            </div>
+        </div>
+
+        <div class="project-hero about">
+            <div class="content">
+                ${about}
+            </div>
+        </div>
+    </div>`);
+
+    menu.push(`<li class="project-link-${projects.length}">Snapshot</li>`);
+
     $('body')
         .find('img')
         .each(function (k, image) {
@@ -124,7 +149,10 @@ function load() {
 
     preloadImages(imageSrc, img, onLoad);
 
-    $('#home-projects').on('click', function (event) {
+    initializeMenu('.menu-container', menu);
+    initializeMenuClick();
+
+    $('.carousel img, .menu-items li').on('click', function (event) {
         const projectIndex = event.target.classList[0].slice(-1);
         const $project = $(`#project-${projectIndex}`);
 
@@ -147,6 +175,119 @@ function load() {
             $('.header').addClass('scroll');
         } else {
             $('.header').removeClass('scroll');
+        }
+    });
+
+    let timerDuration = null;
+    let timer = null;
+
+    // https://stackoverflow.com/questions/16134997/how-to-pause-and-resume-a-javascript-timer
+    function startTimer(seconds, container, oncomplete) {
+        let startTime,
+            timer,
+            obj,
+            ms = seconds * 1000;
+        //display = document.getElementById(container);
+        timerDuration = ms;
+        obj = {};
+        obj.resume = function () {
+            startTime = new Date().getTime();
+            timer = setInterval(obj.step, 100); // default 250, adjust this number to affect granularity
+            // lower numbers are more accurate, but more CPU-expensive
+        };
+        obj.pause = function () {
+            ms = obj.step();
+            clearInterval(timer);
+        };
+        obj.step = function () {
+            let now = Math.max(0, ms - (new Date().getTime() - startTime)); //,
+            //m = Math.floor(now / 60000),
+            //s = Math.floor(now / 1000) % 60;
+            //s = (s < 10 ? '0' : '') + s;
+            //display.innerHTML = m + ':' + s;
+            $('.timer-bubble.active .timer-value').css(
+                'width',
+                ((timerDuration - now) / timerDuration) * 66 + 'px'
+            );
+
+            if (now == 0) {
+                clearInterval(timer);
+                obj.resume = function () {};
+                if (oncomplete) oncomplete();
+            }
+            return now;
+        };
+        obj.resume();
+        return obj;
+    }
+
+    /* Carousel */
+    $('.carousel-slide').get(0).classList.add('active');
+
+    function goToSlide(index) {
+        const currentIndex = parseInt(
+            $('.timer-bubble.active').attr('slide-index')
+        );
+        const currentSlide = $('.carousel-slide').get(currentIndex);
+        const targetSlide = $('.carousel-slide').get(index);
+
+        if (index > currentIndex) {
+            $(targetSlide).css('display', 'block');
+            setTimeout(function () {
+                $(targetSlide).css('opacity', '1');
+            }, 50);
+            setTimeout(function () {
+                $(currentSlide).css('display', 'none');
+                if (currentIndex != 0) {
+                    $(currentSlide).css('opacity', '0');
+                }
+            }, 700);
+        } else if (index < currentIndex) {
+            $(targetSlide).css('display', 'block');
+
+            $(currentSlide).css('opacity', '0');
+            setTimeout(function () {
+                $(currentSlide).css('display', 'none');
+            }, 650);
+        }
+    }
+
+    /* Timer */
+    $('.timer-bubble').get(0).classList.add('active');
+
+    function callback() {
+        const index = parseInt($('.timer-bubble.active').attr('slide-index'));
+        const nextIndex = index < $('.timer-bubble').length - 1 ? index + 1 : 0;
+
+        goToSlide(nextIndex);
+
+        $('.timer-bubble.active').removeClass('active');
+        $('.timer-bubble').get(nextIndex).classList.add('active');
+
+        if (timer != null) {
+            timer = null;
+            timer = startTimer(carouselInterval, null, callback);
+        }
+    }
+
+    timer = startTimer(carouselInterval, null, callback);
+
+    $('.timer-bubble').on('click', function () {
+        const $this = $(this);
+
+        if (!$this.hasClass('active')) {
+            const index = parseInt($this.attr('slide-index'));
+
+            goToSlide(index);
+
+            timer.pause();
+            timer = null;
+
+            $('.timer-bubble').removeClass('active');
+            $this.addClass('active');
+
+            const duration = carouselInterval;
+            timer = startTimer(duration, null, callback);
         }
     });
 }

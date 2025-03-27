@@ -2,19 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="description" content="Curb is a Product Designer in TX." />
+        <meta
+            name="description"
+            content="Multidisciplinary designer with experience collaborating with outstanding teams and clients across a diverse range of projects. My expertise includes full branding, desktop and mobile app design, information architecture, wireframing, prototyping, and creating design systems, all grounded in thorough user research."
+        />
         <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
         <meta name="author" content="Curb" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Curb</title>
         <link href="./favicon.png" rel="icon" />
         <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600"
+            href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600"
             rel="stylesheet"
         />
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
-		<script src="./customization.js"></script>
+        <script src="./customization.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/menu.js"></script>
         <script src="./js/main.js"></script>
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
@@ -31,13 +35,20 @@
         /><![endif]-->
     </head>
     <body>
-        <div id="home-hero" class="home-hero-transition">
-            <div id="home-container" class="ease">
-                <div class="home-transition ease">Multidisciplinary</div>
-                <h1 class="home-transition ease">
-                    Driven by insights to convey ideas in creative spaces.
-                </h1>
-                <ul id="home-projects" class="home-transition ease"></ul>
+        <div id="home" class="ease">
+            <div class="content">
+                <div class="hero-compound">
+                    <div id="logo">curb</div>
+                    <h1 class="desktop-only"></h1>
+                    <div class="menu-container" role="button"></div>
+                </div>
+                <h1 class="mobile-only"></h1>
+                <div class="carousel-compound">
+                    <div class="carousel"></div>
+                    <div class="timer">
+                        <div class="timer-countdown"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
