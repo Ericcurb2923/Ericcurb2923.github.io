@@ -88,7 +88,7 @@ const projects = [
         name: `Thomson Reuters Westlaw`,
         description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
         carouselImage: './img/WestlawCarousel.png',
-        heroImage: './img/WestlawCarouselD.png',
+        heroImage: './img/WestlawHeroD.png',
         caseStudy:
             'https://www.figma.com/proto/qESLRga2Goq4UJSbxCrygs/Westlaw-CS?page-id=0%3A1&node-id=1-24&p=f&viewport=383%2C445%2C0.25&t=OBAbaTxLmy9QLfuS-1&scaling=min-zoom&content-scaling=fixed',
         sections: [
