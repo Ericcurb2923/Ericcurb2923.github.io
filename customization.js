@@ -10,7 +10,7 @@ const about = `<div>
     <br/>
 
     <p>
-        with experience collaborating with outstanding teams and clients across a diverse range of projects. My expertise includes full branding, desktop and mobile app design, information architecture, wireframing, prototyping, and creating design systems, all grounded in thorough user research. In addition, I have successfully defined, coordinated, and managed the UX process within Agile environments for both onshore and offshore teams working on B2B and B2C SaaS products. My approach integrates systems and atomic design with design thinking, utilizing tools like Figma and  Adobe’s product suite to enhance the design process.
+        with experience collaborating with outstanding teams and clients across a diverse range of projects. My expertise includes full branding, desktop and mobile app design, information architecture, wireframing, prototyping, and creating design systems, all grounded in thorough user research. In addition, I have successfully defined, coordinated, and managed the UX process within Agile environments for both onshore and offshore teams working on B2B and B2C SaaS products. My approach integrates systems and atomic design with design thinking, utilizing tools like Figma and  Adobe’s product suite to create impactful experience.
     </p>
 
     <p>
