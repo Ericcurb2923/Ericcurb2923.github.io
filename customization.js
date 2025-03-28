@@ -1,4 +1,4 @@
-const siteTitle = `studio`;
+const siteTitle = `curb`;
 const siteDescription = `Driven by insights to convey ideas in creative spaces.`;
 const carouselInterval = 5;
 
