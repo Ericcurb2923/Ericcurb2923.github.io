@@ -454,7 +454,7 @@ ul {
         font-size: 16px;
     }
 
-    p {
+    p, li {
         line-height: 26px;
     }
 
