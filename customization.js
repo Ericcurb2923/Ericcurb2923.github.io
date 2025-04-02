@@ -7,13 +7,12 @@ const about = `<div>
         Multidisciplinary Designer...
     </p>
 
-    <br/>
-
     <p>
         I am a versatile designer with extensive experience working alongside exceptional teams and clients on a variety of projects. My skill set includes complete branding solutions, as well as designing for both desktop and mobile applications. I specialize in information architecture, wireframing, prototyping, and the creation of design systems, all informed by comprehensive user research.  </p>
 
-    <br/>
 <p>
+</p>
+
 In addition, I have successfully led and managed the UX process within Agile frameworks, collaborating with both onshore and offshore teams on B2B and B2C SaaS initiatives. My methodology combines systems and atomic design with design thinking, utilizing tools like Figma and Adobe’s suite to craft meaningful user experiences.
     </p>
 
