@@ -12,7 +12,7 @@ In addition, I have successfully led and managed the UX process within Agile fra
 
     <p>
         <a href="mailto:info@curb.ws">
-            info@curb.ws
+           I can be reached at info@curb.ws
         </a>
     </p>
 </div>`;
