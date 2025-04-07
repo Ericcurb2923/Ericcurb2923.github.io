@@ -4,9 +4,9 @@ const carouselInterval = 5;
 
 const about = `<div>
    <p>
-        Hello, I'm Eric </p>
+        Hi, I'm Curb </p>
     <p>
-        I am a multidiscipline designer driven by insights to convey ideas in creative spaces. I have successfully led and managed the UX process within Agile frameworks, collaborating with both onshore and offshore teams on B2B and B2C SaaS initiatives. My process combines atomic design with design and systems thinking to craft impactful user experiences. </p>
+        I'm a product designer, driven by insights to convey ideas in creative spaces. I have led and managed UX processes within Agile frameworks, collaborating with both onshore and offshore teams on B2B and B2C SaaS products. My process combines atomic design with design and systems thinking to craft impactful user experiences. </p>
     <p>
         <a href="mailto:info@curb.ws">
          Reach out at info@curb.ws to connect.
