@@ -6,7 +6,7 @@ const about = `<div>
    <p>
         Hello, I'm Eric </p>
     <p>
-        I am a multidiscipline designer driven by insights to conveying ideas in creative spaces. Beyond that, I also mentor designers and advise companies incorporating AI. In addition, I have successfully led and managed the UX process within Agile frameworks, collaborating with both onshore and offshore teams on B2B and B2C SaaS initiatives. My methodology combines systems and atomic design with design thinking, utilizing tools like Figma and Adobe’s suite to craft meaningful user experiences. I’m also most passionate about creating products that benefit everyone. </p>
+        I am a multidiscipline designer driven by insights to convey ideas in creative spaces. Beyond that, I also mentor designers and advise companies incorporating AI. In addition, I have successfully led and managed the UX process within Agile frameworks, collaborating with both onshore and offshore teams on B2B and B2C SaaS initiatives. My methodology combines systems and atomic design with design thinking, utilizing tools like Figma and Adobe’s suite to craft meaningful user experiences. I’m also most passionate about creating products that benefit everyone. </p>
 
 <p>
  </p>
