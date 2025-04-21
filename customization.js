@@ -30,7 +30,7 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        RentSpree connects landlords, agents, and renters, but its previous design system lacked cohesion, slowing consistency, speed to market, and product improvements. Beacon now serves as a clear unified design guide, offering reusable, scalable components that enhance RentSpree’s brand and product. The process below described how it came together.
+                        RentSpree connects landlords, agents, and renters, but its previous design system lacked cohesion, slowing consistency, speed to market, and product improvements. Beacon now serves as a clear unified design guide, offering reusable, scalable components that enhance RentSpree’s brand and product. Below is the process of the project.
                     </p>
                 </div>`,
             },
