@@ -77,7 +77,7 @@ const projects = [
     },
 
     {
-        menuName: `Westlaw`,
+        menuName: `Westlaw CS`,
         name: `Thomson Reuters Westlaw`,
         description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
         carouselImage: './img/WestlawCarousel.png',
@@ -154,7 +154,7 @@ const projects = [
     },
 
     {
-        menuName: `TaxAct`,
+        menuName: `TaxAct CS`,
         name: `TaxAct -  Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
         carouselImage: './img/TaxActCarouselD.png',
