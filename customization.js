@@ -1,5 +1,5 @@
 const siteTitle = `curb`;
-const siteDescription = `Driven by insights to convey ideas in creative spaces.`;
+const siteDescription = `Driven by insights to create solutions.`;
 const carouselInterval = 5;
 
 const about = `<div>
