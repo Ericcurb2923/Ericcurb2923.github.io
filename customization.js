@@ -1,11 +1,11 @@
-const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products.`;
+const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws">Connect.</a>`;
 const carouselInterval = 5;
 
 const about = `<div>
    <p>
         Hi, I'm Curb </p>
     <p>
-        I'm a product designer, driven by insights to convey ideas in creative spaces. I have led and managed UX processes within Agile frameworks. I've have also collaborated with onshore and offshore teams to design B2B and B2C SaaS products. My process combines atomic design with systems thinking to craft impactful user experiences. </p>
+        I'm a product designer, driven by insights to convey ideas in creative spaces. I have led and managed UX processes within Agile frameworks. I've have also collaborated with onshore and offshore teams to design B2B and B2C SaaS products. My process combines atomic design with systems thinking to craft impactful user experiences.</p>
     <p>
         <a href="mailto:info@curb.ws">
          Reach out at info@curb.ws to connect.
@@ -19,6 +19,7 @@ const projects = [
         name: `Beacon - RentSpree`,
         description: `Crafting a design language for a PropTech app by establishing their design system`,
         logo: `./img/Beacon.svg`,
+        logoHeight: `24px`,
         carouselImage: './img/BeaconCarouselD.png',
         heroImage: './img/BeaconHeroD.png',
         caseStudy: '',
@@ -81,6 +82,7 @@ const projects = [
         name: `Thomson Reuters Westlaw`,
         description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
         logo: `./img/ThomsonReuters.svg`,
+        logoHeight: `32px`,
         carouselImage: './img/WestlawCarousel.png',
         heroImage: './img/WestlawHeroD.png',
         caseStudy:
@@ -159,6 +161,7 @@ const projects = [
         name: `TaxAct -  Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
         logo: `./img/Taxact.svg`,
+        logoHeight: `24px`,
         carouselImage: './img/TaxActCarouselD.png',
         heroImage: './img/TaxActHeroD.png',
         caseStudy:

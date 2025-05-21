@@ -26,12 +26,12 @@ function onLoad() {
 }
 
 function load() {
-    $('#headline').text(siteDescription);
+    $('#headline').html(siteDescription);
 
     let menu = [];
 
     $.each(projects, function (index, project) {
-        $('#logos').append(`<img src="${project.logo}" class="project-link-${index}" role="button">`)
+        $('#logos').append(`<img src="${project.logo}" class="project-link-${index}" role="button" style="height: ${project.logoHeight};">`)
 
         menu.push(`<li class="project-link-${index}">
             ${project.menuName}

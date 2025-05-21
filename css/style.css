@@ -210,7 +210,7 @@ ul {
 }
 
 #logos img {
-    height: 32px;
+    height: 24px;
     margin-bottom: 20px;
     padding: 0 20px;
 }
@@ -220,10 +220,16 @@ ul {
 }
 
 #headline {
+    color: #cccccc;
     font-size: 17px;
     font-weight: 200;
     margin-bottom: 4px;
     text-align: center;
+}
+
+#headline a {
+    color: #cccccc;
+    text-decoration: none;
 }
 
 .hero-compound {
@@ -466,7 +472,8 @@ ul {
         font-size: 16px;
     }
 
-    p, li {
+    p,
+    li {
         line-height: 26px;
     }
 
@@ -497,6 +504,7 @@ ul {
 
     #headline {
         font-size: 18px;
+        line-height: 24px;
         text-align: start;
         width: 90%;
     }
