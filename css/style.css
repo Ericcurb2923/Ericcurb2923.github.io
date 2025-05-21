@@ -116,7 +116,7 @@ ul {
     max-height: 0;
     overflow: hidden;
     position: absolute;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease;
     z-index: 1;
 }
 
@@ -137,7 +137,7 @@ ul {
 }
 
 .menu-dropdown.active {
-    max-height: 200px;
+    max-height: 500px;
 }
 
 .menu-items {
@@ -161,22 +161,23 @@ ul {
     background-color: #ffffff;
     border-radius: 8px;
     font-size: 15px;
-    padding: 0 10px;
+    padding: 6px 16px;
     transition: background-color 0.2s ease;
     white-space: nowrap;
 }
 
 .menu-items li:last-child {
-    margin-top: 16px;
+    margin-top: 24px;
 }
 
 .menu-items li:last-child::before {
     border-top: 1px solid #dbdbdb;
     content: '';
     display: block;
-    margin-top: -9px;
+    margin-left: -10px;
+    margin-top: -18px;
     position: absolute;
-    width: calc(100% - 44px);
+    width: calc(100% - 36px);
 }
 
 .menu-items li:focus {
