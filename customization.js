@@ -1,4 +1,4 @@
-const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws">Connect.</a>`;
+const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws" class="desktop-only">Connect.</a>`;
 const carouselInterval = 5;
 
 const about = `<div>

@@ -140,7 +140,9 @@ function load() {
         </div>
     </div>`);
 
-    menu.push(`<li class="project-link-${projects.length}">Snapshot</li>`);
+    //menu.push(`<li class="project-link-${projects.length}">Snapshot</li>`);
+    menu.push(`<li><a href="mailto:info@curb.ws">Connect</a></li>`);
+
 
     $('body')
         .find('img')

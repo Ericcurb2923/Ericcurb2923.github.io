@@ -188,6 +188,11 @@ ul {
     cursor: pointer;
 }
 
+.menu-items li a {
+    color: #212121;
+    text-decoration: none;
+}
+
 .menu:hover {
     cursor: pointer;
 }
@@ -223,6 +228,7 @@ ul {
     color: #cccccc;
     font-size: 17px;
     font-weight: 200;
+    line-height: 24px;
     margin-bottom: 4px;
     text-align: center;
 }
@@ -495,7 +501,7 @@ ul {
     }
 
     .menu-container {
-        margin-top: 12px;
+        margin-top: 6px;
     }
 
     #home {
@@ -504,7 +510,6 @@ ul {
 
     #headline {
         font-size: 18px;
-        line-height: 24px;
         text-align: start;
         width: 90%;
     }
