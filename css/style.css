@@ -217,12 +217,28 @@ ul {
 
 #logos img {
     height: 24px;
-    margin-bottom: 20px;
-    padding: 0 20px;
 }
 
 #logos img:hover {
     cursor: pointer;
+}
+
+.home-logo-container {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.home-logo::after {
+    border-bottom: 2px solid #ffffff;
+    content: '';
+    display: block;
+    transition: width 0.4s ease;
+    width: 0;
+}
+
+.home-logo:hover::after {
+    width: 100%;
 }
 
 #headline {

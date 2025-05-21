@@ -31,7 +31,11 @@ function load() {
     let menu = [];
 
     $.each(projects, function (index, project) {
-        $('#logos').append(`<img src="${project.logo}" class="project-link-${index}" role="button" style="height: ${project.logoHeight};">`)
+        $('#logos').append(`<div class="home-logo-container">
+            <div class="home-logo">
+                <img src="${project.logo}" class="project-link-${index}" role="button" style="height: ${project.logoHeight};">
+            </div>
+        </div>`)
 
         menu.push(`<li class="project-link-${index}">
             ${project.menuName}
