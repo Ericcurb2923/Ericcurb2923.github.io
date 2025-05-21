@@ -26,12 +26,13 @@ function onLoad() {
 }
 
 function load() {
-    $('#logo').text(siteTitle);
-    $('#home h1').text(siteDescription);
+    $('#headline').text(siteDescription);
 
     let menu = [];
 
     $.each(projects, function (index, project) {
+        $('#logos').append(`<img src="${project.logo}" class="project-link-${index}" role="button">`)
+
         menu.push(`<li class="project-link-${index}">
             ${project.menuName}
         </li>`);
@@ -152,7 +153,7 @@ function load() {
     initializeMenu('.menu-container', menu);
     initializeMenuClick();
 
-    $('.carousel img, .menu-items li').on('click', function (event) {
+    $('#logos img, .carousel img, .menu-items li').on('click', function (event) {
         const projectIndex = event.target.classList[0].slice(-1);
         const $project = $(`#project-${projectIndex}`);
 

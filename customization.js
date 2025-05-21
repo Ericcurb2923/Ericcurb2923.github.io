@@ -1,5 +1,4 @@
-const siteTitle = `curb`;
-const siteDescription = `Driven by insights to create solutions.`;
+const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products.`;
 const carouselInterval = 5;
 
 const about = `<div>
@@ -19,6 +18,7 @@ const projects = [
         menuName: `Beacon`,
         name: `Beacon - RentSpree`,
         description: `Crafting a design language for a PropTech app by establishing their design system`,
+        logo: `./img/Beacon.svg`,
         carouselImage: './img/BeaconCarouselD.png',
         heroImage: './img/BeaconHeroD.png',
         caseStudy: '',
@@ -80,6 +80,7 @@ const projects = [
         menuName: `Westlaw CS`,
         name: `Thomson Reuters Westlaw`,
         description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
+        logo: `./img/ThomsonReuters.svg`,
         carouselImage: './img/WestlawCarousel.png',
         heroImage: './img/WestlawHeroD.png',
         caseStudy:
@@ -157,6 +158,7 @@ const projects = [
         menuName: `TaxAct CS`,
         name: `TaxAct -  Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
+        logo: `./img/Taxact.svg`,
         carouselImage: './img/TaxActCarouselD.png',
         heroImage: './img/TaxActHeroD.png',
         caseStudy:

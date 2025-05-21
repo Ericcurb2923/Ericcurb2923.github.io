@@ -193,6 +193,9 @@ ul {
 }
 
 #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     margin-top: 20px;
     opacity: 0;
@@ -201,23 +204,30 @@ ul {
     width: 100%;
 }
 
-#home h1 {
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 28px;
-    margin: 0;
+#logos {
+    margin-bottom: 40px;
 }
 
-#logo {
-    font-family: 'Product Sans Italic';
-    font-size: 28px;
-    font-weight: 400;
+#logos img {
+    height: 32px;
+    padding: 0 20px;
+}
+
+#logos img:hover {
+    cursor: pointer;
+}
+
+#headline {
+    font-size: 17px;
+    font-weight: 200;
     margin-bottom: 4px;
+    text-align: center;
 }
 
 .hero-compound {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 80px;
     margin-bottom: 10%;
@@ -475,15 +485,23 @@ ul {
         padding: 40px;
     }
 
-    #home h1 {
-        width: 80%;
+    .menu-container {
+        margin-top: 12px;
     }
 
-    #logo {
-        font-size: 20px;
+    #home {
+        display: block;
+    }
+
+    #headline {
+        font-size: 18px;
+        text-align: start;
+        width: 90%;
     }
 
     .hero-compound {
+        align-items: unset;
+        flex-direction: row;
         margin-top: 0;
         margin-bottom: 0;
     }
