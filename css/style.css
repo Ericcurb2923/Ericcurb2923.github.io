@@ -242,10 +242,12 @@ ul {
     background-color: #ffffff;
     border: 1px solid #d6d6d6;
     border-top-left-radius: 8px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0;
     color: #878787;
     font-size: 16px;
-    padding: 20px;
+    padding: 0 20px;
     max-width: 306px;
     width: 100%;
 }
@@ -253,7 +255,9 @@ ul {
 .password-input-compound button {
     background-color: #ffffff;
     border: 1px solid #d6d6d6;
+    border-top-left-radius: 0;
     border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 8px;
     color: #979797;
     font-size: 28px;
