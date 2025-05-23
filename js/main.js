@@ -26,14 +26,17 @@ function submitPassword() {
         localStorage.setItem('passKey', passKey);
 
         $('body').css('overflow', '');
-
-        const $password = $('#password');
-        $password.css({ 'margin-top': '-20px', opacity: '0' });
-
-        setTimeout(function () {
-            $password.css('display', 'none');
-        }, 500);
+    } else {
+        $('.project.active').css('display', 'none').removeClass('active');
+        $('.project').css('display', '');
     }
+    const $password = $('#password');
+    $password.css({ 'margin-top': '-20px', opacity: '0' });
+
+    setTimeout(function () {
+        $password.css('display', 'none');
+        $('#password-input').val('');
+    }, 500);
 }
 
 function onLoad() {
