@@ -21,6 +21,17 @@ function preloadImages(srcs, imgs, callback) {
     }
 }
 
+function submitPassword() {
+    if ($('#password-input').val() === passKey) {
+        const $password = $('#password');
+        $password.css({ 'margin-top': '-20px', opacity: '0' });
+
+        setTimeout(function () {
+            $password.css('display', 'none');
+        }, 500);
+    }
+}
+
 function onLoad() {
     $('#home').css({ 'margin-top': '0', opacity: '1' });
 }
@@ -32,17 +43,20 @@ function load() {
 
     $.each(projects, function (index, project) {
         $('#logos').append(`<div class="home-logo-container">
-            <div class="home-logo">
-                <img src="${project.logo}" class="project-link-${index}" role="button" style="height: ${project.logoHeight};">
+            <div class="home-logo ${project.active ? 'active' : ''}">
+                <img src="${
+                    project.logo
+                }" class="project-link-${index}" role="button" style="height: ${project.logoHeight};">
             </div>
-        </div>`)
+        </div>`);
 
-        menu.push(`<li class="project-link-${index}">
-            ${project.menuName}
-        </li>`);
+        if (project.active) {
+            menu.push(`<li class="project-link-${index}">
+                ${project.menuName}
+            </li>`);
 
-        $('.carousel').append(
-            `<div class="carousel-slide" slide-index="${index}">
+            $('.carousel').append(
+                `<div class="carousel-slide" slide-index="${index}">
                 <img src="${project.carouselImage}" class="project-link-${index} desktop-only" alt="${project.name}: ${project.description}" role="button">
                 <div class="mobile-only">
                     <img src="${project.heroImage}" class="project-link-${index}" role="button">
@@ -52,82 +66,85 @@ function load() {
                     </div>
                 </div>
             </div>`
-        );
+            );
 
-        $('.timer').append(`
+            $('.timer').append(`
             <div class="timer-bubble" slide-index="${index}">
                 <div class="timer-container"></div>
                 <div class="timer-value"></div>
             </div>
         `);
 
-        const caseStudyHTML =
-            project.caseStudy != ''
-                ? `<a href="${project.caseStudy}" target="_blank">Case study</a>`
-                : '';
+            const caseStudyHTML =
+                project.caseStudy != ''
+                    ? `<a href="${project.caseStudy}" target="_blank">Case study</a>`
+                    : '';
 
-        let projectHTML = `<div id="project-${index}" class="project ease">
-            <div class="header">
-                <div class="content ease">
-                    <div class="back" role="button"></div>
-                    ${caseStudyHTML}
-                </div>
-            </div>
-
-            <div class="project-hero">
-                <div class="content">
-                    <div class="project-details">
-                        <p class="project-name ease">${project.name}</p>
-                        <p class="project-description ease">${project.description}</p>
+            let projectHTML = `<div id="project-${index}" class="project ease">
+                <div class="header">
+                    <div class="content ease">
+                        <div class="back" role="button"></div>
+                        ${caseStudyHTML}
                     </div>
-                    <img class="project-image" src="${project.heroImage}">
                 </div>
-            </div>`;
 
-        $.each(project.sections, function (i, section) {
-            let $section = $(
-                $.parseHTML(`<div style="background-color: ${section.backgroundColor}; color: ${section.textColor};">
-                    <div class="section content">${section.content}</div>
-                </div>`)
-            );
-
-            if (section.label) {
-                let $labelLeftColumn = `<div class="label-left-column">
-                    <div class="label">${section.label}</div>
+                <div class="project-hero">
+                    <div class="content">
+                        <div class="project-details">
+                            <p class="project-name ease">${project.name}</p>
+                            <p class="project-description ease">${project.description}</p>
+                        </div>
+                        <img class="project-image" src="${project.heroImage}">
+                    </div>
                 </div>`;
 
-                if ($section.find('img').length > 0) {
-                    $section.find('.content')
-                        .prepend(`<div class="label-content">
+            $.each(project.sections, function (i, section) {
+                let $section = $(
+                    $.parseHTML(`<div style="background-color: ${section.backgroundColor}; color: ${section.textColor};">
+                    <div class="section content">${section.content}</div>
+                </div>`)
+                );
+
+                if (section.label) {
+                    let $labelLeftColumn = `<div class="label-left-column">
+                        <div class="label">${section.label}</div>
+                    </div>`;
+
+                    if ($section.find('img').length > 0) {
+                        $section.find('.content')
+                            .prepend(`<div class="label-content">
                         ${$labelLeftColumn}
-                        <div class="label-right-column"></div>
-                    </div>`);
+                            <div class="label-right-column"></div>
+                        </div>`);
 
-                    let $labelRightColumn = $section.find(
-                        '.label-right-column'
-                    );
+                        let $labelRightColumn = $section.find(
+                            '.label-right-column'
+                        );
 
-                    $($section.find('* + img').get(0))
-                        .prevAll()
-                        .each(function (j, sibling) {
-                            $labelRightColumn.prepend(sibling);
-                        });
-                } else {
-                    $section
-                        .find('.content')
-                        .addClass('label-content')
-                        .prepend($labelLeftColumn);
+                        $($section.find('* + img').get(0))
+                            .prevAll()
+                            .each(function (j, sibling) {
+                                $labelRightColumn.prepend(sibling);
+                            });
+                    } else {
+                        $section
+                            .find('.content')
+                            .addClass('label-content')
+                            .prepend($labelLeftColumn);
+                    }
                 }
-            }
 
-            if (section.hideMobileLabel) {
-                $section.find('.label-left-column').addClass('desktop-only');
-            }
+                if (section.hideMobileLabel) {
+                    $section
+                        .find('.label-left-column')
+                        .addClass('desktop-only');
+                }
 
-            projectHTML += $section.get(0).outerHTML;
-        });
+                projectHTML += $section.get(0).outerHTML;
+            });
 
-        $('body').append(projectHTML + '</div>');
+            $('body').append(projectHTML + '</div>');
+        }
     });
 
     $('body').append(`<div id="project-${projects.length}" class="project ease">
@@ -147,7 +164,6 @@ function load() {
     //menu.push(`<li class="project-link-${projects.length}">Snapshot</li>`);
     menu.push(`<li><a href="mailto:info@curb.ws">Connect</a></li>`);
 
-
     $('body')
         .find('img')
         .each(function (k, image) {
@@ -159,15 +175,18 @@ function load() {
     initializeMenu('.menu-container', menu);
     initializeMenuClick();
 
-    $('#logos img, .carousel img, .menu-items li').on('click', function (event) {
-        const projectIndex = event.target.classList[0].slice(-1);
-        const $project = $(`#project-${projectIndex}`);
+    $('#logos img, .carousel img, .menu-items li').on(
+        'click',
+        function (event) {
+            const projectIndex = event.target.classList[0].slice(-1);
+            const $project = $(`#project-${projectIndex}`);
 
-        $project.css('display', 'block');
-        setTimeout(function () {
-            $project.addClass('active');
-        }, 10);
-    });
+            $project.css('display', 'block');
+            setTimeout(function () {
+                $project.addClass('active');
+            }, 10);
+        }
+    );
 
     $('.project .back').on('click', function (event) {
         const $project = $(event.target.closest('.project'));
@@ -301,4 +320,8 @@ function load() {
 
 $(document).ready(function () {
     load();
+
+    setTimeout(function () {
+        $('#password').removeClass('loading');
+    }, 200);
 });

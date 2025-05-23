@@ -35,6 +35,28 @@
         /><![endif]-->
     </head>
     <body>
+        <div id="password" class="loading">
+            <div class="password-input-compound">
+                <input id="password-input" placeholder="Enter password" />
+                <button aria-label="Go">⭢</button>
+            </div>
+            <div class="password-directives">
+                <a href="mailto:info@curb.ws">Connect</a> to receive a password
+                for accessing the content.
+            </div>
+        </div>
+        <script>
+            document
+                .querySelector('#password-input')
+                .addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        submitPassword();
+                    }
+                });
+            $('#password button').on('click', function () {
+                submitPassword();
+            });
+        </script>
         <div id="home" class="ease">
             <div class="content">
                 <div class="hero-compound">

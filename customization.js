@@ -1,3 +1,4 @@
+const passKey = `Studio2025`;
 const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws" class="desktop-only">Connect.</a>`;
 const carouselInterval = 5;
 
@@ -15,11 +16,17 @@ const about = `<div>
 
 const projects = [
     {
+        active: false,
+        logo: `./img/McDonalds.svg`,
+        logoHeight: `32px`,
+    },
+    {
+        active: true,
+        logo: `./img/Beacon.svg`,
+        logoHeight: `24px`,
         menuName: `Beacon`,
         name: `Beacon - RentSpree`,
         description: `Crafting a design language for a PropTech app by establishing their design system`,
-        logo: `./img/Beacon.svg`,
-        logoHeight: `24px`,
         carouselImage: './img/BeaconCarouselD.png',
         heroImage: './img/BeaconHeroD.png',
         caseStudy: '',
@@ -76,13 +83,28 @@ const projects = [
             },
         ],
     },
-
     {
+        active: false,
+        logo: `./img/Hilton.svg`,
+        logoHeight: `32px`,
+    },
+    {
+        active: false,
+        logo: `./img/FedEx.svg`,
+        logoHeight: `28px`,
+    },
+    {
+        active: false,
+        logo: `./img/Marvel.svg`,
+        logoHeight: `28px`,
+    },
+    {
+        active: true,
+        logo: `./img/ThomsonReuters.svg`,
+        logoHeight: `32px`,
         menuName: `Westlaw CS`,
         name: `Thomson Reuters Westlaw`,
         description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
-        logo: `./img/ThomsonReuters.svg`,
-        logoHeight: `32px`,
         carouselImage: './img/WestlawCarousel.png',
         heroImage: './img/WestlawHeroD.png',
         caseStudy:
@@ -155,13 +177,13 @@ const projects = [
             },
         ],
     },
-
     {
+        active: true,
+        logo: `./img/Taxact.svg`,
+        logoHeight: `24px`,
         menuName: `TaxAct CS`,
         name: `TaxAct -  Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
-        logo: `./img/Taxact.svg`,
-        logoHeight: `24px`,
         carouselImage: './img/TaxActCarouselD.png',
         heroImage: './img/TaxActHeroD.png',
         caseStudy:
