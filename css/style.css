@@ -282,9 +282,14 @@ ul {
     margin-left: -1px;
     padding-left: 20px;
     padding-right: 20px;
+    transition: color 0.2s ease;
 }
 
-.password-input-compound button:hover {
+.password-input-compound button.active {
+    color: #535353;
+}
+
+.password-input-compound button.active:hover {
     cursor: pointer;
 }
 
@@ -323,7 +328,7 @@ ul {
 .home-logo-container {
     display: inline-block;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 18px;
     vertical-align: middle;
 }
 

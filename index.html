@@ -35,14 +35,16 @@
         /><![endif]-->
     </head>
     <body>
-        <div id="password" style="display: none; margin-top: 20px; opacity: 0;">
+        <div id="password" style="display: none; margin-top: 20px; opacity: 0">
             <div class="password-input-compound">
                 <input id="password-input" placeholder="Enter password" />
                 <button aria-label="Go">⭢</button>
             </div>
             <div class="password-directives">
-                <a class="active underline" href="mailto:info@curb.ws">Connect</a> to receive a password
-                for accessing the content.
+                <a class="active underline" href="mailto:info@curb.ws"
+                    >Connect</a
+                >
+                to receive a password for accessing the content.
             </div>
         </div>
         <script>
@@ -51,6 +53,16 @@
                 .addEventListener('keypress', function (e) {
                     if (e.key === 'Enter') {
                         submitPassword();
+                    }
+                });
+            document
+                .querySelector('#password-input')
+                .addEventListener('input', function (e) {
+                    console.log(e.target.value)
+                    if (e.target.value === passKey) {
+                        $('#password button').addClass('active');
+                    } else {
+                        $('#password button').removeClass('active');
                     }
                 });
             $('#password button').on('click', function () {
