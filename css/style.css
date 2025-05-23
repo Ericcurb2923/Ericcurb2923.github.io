@@ -198,6 +198,31 @@ ul {
     cursor: pointer;
 }
 
+.underline {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.underline::after {
+    border-bottom: 1px solid #cccccc;
+    content: '';
+    display: block;
+    transition: width 0.4s ease;
+    width: 0;
+}
+
+.underline:hover {
+    cursor: pointer;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+.underline.active::after {
+    width: 100%;
+}
+
 #password {
     align-items: center;
     background-color: #212121;
@@ -210,7 +235,7 @@ ul {
     padding: 0 40px;
     position: fixed;
     transition: margin 0.4s ease, opacity 0.4s ease;
-    z-index: 1;
+    z-index: 3;
 }
 
 #password textarea:focus,
@@ -221,14 +246,6 @@ ul {
 
 #password > * {
     transition: margin 0.4s ease, opacity 0.4s ease;
-}
-
-#password.loading > *:first-child {
-    margin-top: 20px;
-}
-
-#password.loading > * {
-    opacity: 0;
 }
 
 .password-input-compound {
@@ -312,18 +329,6 @@ ul {
 
 .home-logo::after {
     border-bottom: 2px solid #ffffff;
-    content: '';
-    display: block;
-    transition: width 0.4s ease;
-    width: 0;
-}
-
-.home-logo.active:hover {
-    cursor: pointer;
-}
-
-.home-logo.active:hover::after {
-    width: 100%;
 }
 
 #headline {

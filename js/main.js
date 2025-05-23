@@ -23,6 +23,10 @@ function preloadImages(srcs, imgs, callback) {
 
 function submitPassword() {
     if ($('#password-input').val() === passKey) {
+        localStorage.setItem('passKey', passKey);
+
+        $('body').css('overflow', '');
+
         const $password = $('#password');
         $password.css({ 'margin-top': '-20px', opacity: '0' });
 
@@ -43,7 +47,7 @@ function load() {
 
     $.each(projects, function (index, project) {
         $('#logos').append(`<div class="home-logo-container">
-            <div class="home-logo ${project.active ? 'active' : ''}">
+            <div class="home-logo ${project.active ? 'underline' : ''}">
                 <img src="${
                     project.logo
                 }" class="project-link-${index}" role="button" style="height: ${project.logoHeight};">
@@ -178,13 +182,32 @@ function load() {
     $('#logos img, .carousel img, .menu-items li').on(
         'click',
         function (event) {
+            function displayProject(project) {
+                project.css('display', 'block');
+                setTimeout(function () {
+                    project.addClass('active');
+                }, 10);
+            }
+
             const projectIndex = event.target.classList[0].slice(-1);
             const $project = $(`#project-${projectIndex}`);
 
-            $project.css('display', 'block');
-            setTimeout(function () {
-                $project.addClass('active');
-            }, 10);
+            if (!(localStorage.getItem('passKey') == passKey)) {
+                $('body').css('overflow', 'hidden');
+
+                const $password = $('#password');
+
+                $password.css('display', 'flex');
+                setTimeout(function () {
+                    $password.css({ 'margin-top': '', opacity: '' });
+                }, 10);
+
+                setTimeout(function () {
+                    displayProject($project);
+                }, 500);
+            } else {
+                displayProject($project);
+            }
         }
     );
 
@@ -320,8 +343,4 @@ function load() {
 
 $(document).ready(function () {
     load();
-
-    setTimeout(function () {
-        $('#password').removeClass('loading');
-    }, 200);
 });

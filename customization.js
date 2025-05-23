@@ -1,5 +1,5 @@
 const passKey = `Studio2025`;
-const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws" class="desktop-only">Connect.</a>`;
+const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws" class="desktop-only underline">Connect</a>.`;
 const carouselInterval = 5;
 
 const about = `<div>
@@ -22,14 +22,15 @@ const projects = [
     },
     {
         active: true,
-        logo: `./img/Beacon.svg`,
+        logo: `./img/Taxact.svg`,
         logoHeight: `24px`,
-        menuName: `Beacon`,
-        name: `Beacon - RentSpree`,
-        description: `Crafting a design language for a PropTech app by establishing their design system`,
-        carouselImage: './img/BeaconCarouselD.png',
-        heroImage: './img/BeaconHeroD.png',
-        caseStudy: '',
+        menuName: `TaxAct CS`,
+        name: `TaxAct -  Shopping Experience`,
+        description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
+        carouselImage: './img/TaxActCarouselD.png',
+        heroImage: './img/TaxActHeroD.png',
+        caseStudy:
+            'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
         sections: [
             {
                 label: 'Problem',
@@ -38,15 +39,15 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        RentSpree connects landlords, agents, and renters, but its previous design system lacked cohesion, slowing consistency, speed to market, and product improvements. Beacon now serves as a clear unified design guide, offering reusable, scalable components that enhance RentSpree’s brand and product. Below is the process of the project.
+                        TaxAct offers software specifically designed to assist users in efficiently preparing and filing their taxes, catering to both individuals and businesses. While it provides a variety of packages tailored to different tax situations, the platform’s unclear reasons to buy and inconsistent UI design patterns that have increased user drop-off rates, resulting in lower SUS and NPS ratings. Below are TaxAct’s charted scores and identified start rate drivers from the research.
                     </p>
                 </div>`,
             },
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/BeaconCollageD.png" style="margin-top: 1em">
-                    <img class="mobile-only" src="./img/BeaconCollageM.png" style="margin-top: 1em">
+                    <img class="desktop-only" src="./img/TaxActDataD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/TaxActDataM.png" style="margin-top: 1em">
                 </div>`,
             },
             {
@@ -56,29 +57,34 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        The design system strategy focused on building a unified framework that helps teams deliver consistent, user-friendly experiences. By creating a single source of truth for design components and guidelines, it improves collaboration, streamlines workflows, and ensures a cohesive brand across platforms. I prioritized flexibility, accessibility, and efficiency to adapt to user needs while maintaining a professional design. My strategy as the UX Design Lead is as follows:
+                        The four key objectives were: Improve authentication, align on start rate drivers that can increase user confidence and convenience, highlight advantages compared to competitors, and allow our product to convert new and retain current customers. We chose the Double Diamond design process model to research, create and valid concepts for production.
                     </p>
 
-                    <ol>
-                        <li>Evaluate (Colors, Icons, UI Patterns, Accessibility)</li>
-                        <li>Shape vision (Create design language and principles)</li>
-                        <li>Create library (Typography, Color Palette, Patterns/Components, Assets)</li>
-                        <li>Unify as one (Style & Usage guidance, Component library, Team governance)</li>
-                    </ol>
+                    <p>
+                        As the UX Design Lead, my focus was design strategy, creating a mobile first approach, user research, prototyping, A/B testing and design. I partnered with two researchers, three engineers, two QA team members and the product owner for five months. Below is the design strategy.
+                    </p>
+
+                    <img class="desktop-only" src="./img/TaxActStrategyD.png">
+                    <img class="mobile-only" src="./img/TaxActStrategyM.png">
                 </div>`,
             },
             {
                 label: 'Outcome',
                 hideMobileLabel: false,
-                backgroundColor: '#212121',
-                textColor: '#ffffff',
+                backgroundColor: '#f4f5f8',
+                textColor: '#212121',
                 content: `<div>
                     <p>
-                        Beacon created a clear design language that improves user experience with easy-to-use scalable components and guidelines for RentSpree. A governance process was introduced to ensure all elements are functional and user-friendly through UX and Dev reviews. This design system has also increased cross functional collaboration ensuring consistency and an elevated product quality that support RentSpree's goal of simplifying the rental experience for all users.
+                        The success of the project was measured by user conversion rates and confidence in our product's ability to have clear value props. By creating a scalable, user-friendly homepage, and integrating user feedback with our start rate drivers, we achieved a 30% improvement in performance, accessibility, best practices, and SEO. This directly contributed to reaching our goal of a 2% increase in start rate.
+                    </p>
+                    </ol>
+
+                    <p>
+                        The mobile-first approach I created was embraced and implemented into a responsive grid system, which established a cohesive design language for future product features and provided a flexible framework for secondary and tertiary pages. This also enabled our team to integrated a CMS for the homepage, landing and partnership pages. This transition dramatically reduced our time to market and enabled us to deliver scalable, high-quality designs more efficiently. Select the case study link for a in depth analysis of the full process.
                     </p>
 
-                    <img class="desktop-only" src="./img/BeaconMocksD.png">
-                    <img class="mobile-only" src="./img/BeaconMocksM.png">
+                    <img class="desktop-only" src="./img/TaxActFMD.png">
+                    <img class="mobile-only" src="./img/TaxActFMM.png">
                 </div>`,
             },
         ],
@@ -179,15 +185,14 @@ const projects = [
     },
     {
         active: true,
-        logo: `./img/Taxact.svg`,
+        logo: `./img/Beacon.svg`,
         logoHeight: `24px`,
-        menuName: `TaxAct CS`,
-        name: `TaxAct -  Shopping Experience`,
-        description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
-        carouselImage: './img/TaxActCarouselD.png',
-        heroImage: './img/TaxActHeroD.png',
-        caseStudy:
-            'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
+        menuName: `Beacon`,
+        name: `Beacon - RentSpree`,
+        description: `Crafting a design language for a PropTech app by establishing their design system`,
+        carouselImage: './img/BeaconCarouselD.png',
+        heroImage: './img/BeaconHeroD.png',
+        caseStudy: '',
         sections: [
             {
                 label: 'Problem',
@@ -196,15 +201,15 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        TaxAct offers software specifically designed to assist users in efficiently preparing and filing their taxes, catering to both individuals and businesses. While it provides a variety of packages tailored to different tax situations, the platform’s unclear reasons to buy and inconsistent UI design patterns that have increased user drop-off rates, resulting in lower SUS and NPS ratings. Below are TaxAct’s charted scores and identified start rate drivers from the research.
+                        RentSpree connects landlords, agents, and renters, but its previous design system lacked cohesion, slowing consistency, speed to market, and product improvements. Beacon now serves as a clear unified design guide, offering reusable, scalable components that enhance RentSpree’s brand and product. Below is the process of the project.
                     </p>
                 </div>`,
             },
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/TaxActDataD.png" style="margin-top: 1em">
-                    <img class="mobile-only" src="./img/TaxActDataM.png" style="margin-top: 1em">
+                    <img class="desktop-only" src="./img/BeaconCollageD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/BeaconCollageM.png" style="margin-top: 1em">
                 </div>`,
             },
             {
@@ -214,34 +219,29 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        The four key objectives were: Improve authentication, align on start rate drivers that can increase user confidence and convenience, highlight advantages compared to competitors, and allow our product to convert new and retain current customers. We chose the Double Diamond design process model to research, create and valid concepts for production.
+                        The design system strategy focused on building a unified framework that helps teams deliver consistent, user-friendly experiences. By creating a single source of truth for design components and guidelines, it improves collaboration, streamlines workflows, and ensures a cohesive brand across platforms. I prioritized flexibility, accessibility, and efficiency to adapt to user needs while maintaining a professional design. My strategy as the UX Design Lead is as follows:
                     </p>
 
-                    <p>
-                        As the UX Design Lead, my focus was design strategy, creating a mobile first approach, user research, prototyping, A/B testing and design. I partnered with two researchers, three engineers, two QA team members and the product owner for five months. Below is the design strategy.
-                    </p>
-
-                    <img class="desktop-only" src="./img/TaxActStrategyD.png">
-                    <img class="mobile-only" src="./img/TaxActStrategyM.png">
+                    <ol>
+                        <li>Evaluate (Colors, Icons, UI Patterns, Accessibility)</li>
+                        <li>Shape vision (Create design language and principles)</li>
+                        <li>Create library (Typography, Color Palette, Patterns/Components, Assets)</li>
+                        <li>Unify as one (Style & Usage guidance, Component library, Team governance)</li>
+                    </ol>
                 </div>`,
             },
             {
                 label: 'Outcome',
                 hideMobileLabel: false,
-                backgroundColor: '#f4f5f8',
-                textColor: '#212121',
+                backgroundColor: '#212121',
+                textColor: '#ffffff',
                 content: `<div>
                     <p>
-                        The success of the project was measured by user conversion rates and confidence in our product's ability to have clear value props. By creating a scalable, user-friendly homepage, and integrating user feedback with our start rate drivers, we achieved a 30% improvement in performance, accessibility, best practices, and SEO. This directly contributed to reaching our goal of a 2% increase in start rate.
-                    </p>
-                    </ol>
-
-                    <p>
-                        The mobile-first approach I created was embraced and implemented into a responsive grid system, which established a cohesive design language for future product features and provided a flexible framework for secondary and tertiary pages. This also enabled our team to integrated a CMS for the homepage, landing and partnership pages. This transition dramatically reduced our time to market and enabled us to deliver scalable, high-quality designs more efficiently. Select the case study link for a in depth analysis of the full process.
+                        Beacon created a clear design language that improves user experience with easy-to-use scalable components and guidelines for RentSpree. A governance process was introduced to ensure all elements are functional and user-friendly through UX and Dev reviews. This design system has also increased cross functional collaboration ensuring consistency and an elevated product quality that support RentSpree's goal of simplifying the rental experience for all users.
                     </p>
 
-                    <img class="desktop-only" src="./img/TaxActFMD.png">
-                    <img class="mobile-only" src="./img/TaxActFMM.png">
+                    <img class="desktop-only" src="./img/BeaconMocksD.png">
+                    <img class="mobile-only" src="./img/BeaconMocksM.png">
                 </div>`,
             },
         ],
