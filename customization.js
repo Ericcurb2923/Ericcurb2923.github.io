@@ -103,6 +103,71 @@ const projects = [
         active: false,
         logo: `./img/Marvel.svg`,
         logoHeight: `28px`,
+        menuName: `Marvel`,
+        name: `Marvel Iron Man 2 - LG`,
+        description: `Creating a redemption website for Marvel, LG and DecalGirl.`,
+        carouselImage: './img/MarvelHeroD.png',
+        heroImage: './img/MarvelHeroD.png',
+        caseStudy:'',
+        sections: [
+            {
+                label: 'Overview',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        Marvel, LG & DecalGirl partnered to promote the movie Iron Man 2 by creating a redemption website with custom mobile device skins and promotional wallpaper from the movie. This was an opportunity to capitalize across brands with the launch of new mobile phones, custom skins and promotional wallpapers for the movie rollout.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/MarvelCarouselD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/MarvelCarouselM.png" style="margin-top: 1em">
+                </div>`,
+            },
+            {
+                label: 'Process',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        I designed a dual-pathway funnel based on unique redemption codes. One pathway branded with Iron Man 2 visuals and the other with LG’s brand showcasing custom skins designs. I crafted initial wireframes for approval to ensure the design met the needs for both flows visually and functionally while working with stakeholders and an engineer. 
+                    </p>
+
+                    <p>
+                        Users could select customized artwork skins from DecalGirl and get the a bonus limited Iron Man 2 wallpaper depending on the redemption code they received. A select a number of users were granted access between both promotions via email. To claim the reward users accessed the website link to follow the step-by-step instructions. Users were prompted to enter their redemption code which would push users to either the Iron Man 2 funnel or DecalGirl’s custom art only funnel. Users selected their LG device first, then a custom skin and lastly entered their contact information to confirm for shipping.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/MarvelWFD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/MarvelWFM.png" style="margin-top: 1em">
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#F4F5F8',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        DecalGirl experienced a measurable increase in brand recognition, with a 7% rise in international website traffic during the campaign period. Marvel successfully tied the Iron Man 2 movie promotion to a tangible product, enhancing fan engagement and merchandise sales. The dual-pathway funnel design ensured a seamless user experience, reducing drop-off rates by 4% compared to previous campaigns. The step-by-step instructions and redemption process were praised for their clarity, contributing to the campaign's overall success.
+                    </p>
+                    <p>
+                        By aligning the goals of all partners and leveraging the strengths of each brand, the campaign not only met but exceeded expectations, setting a benchmark for future collaborative promotions.
+                    </p>
+
+                    <img class="desktop-only" src="./img/MarvelFDD.png">
+                    <img class="mobile-only" src="./img/MarvelFDM.png">
+                </div>`,
+            },
+        ],
     },
     {
         active: true,
