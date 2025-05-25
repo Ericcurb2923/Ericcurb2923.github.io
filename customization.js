@@ -100,7 +100,7 @@ const projects = [
         logoHeight: `28px`,
     },
     {
-        active: false,
+        active: true,
         logo: `./img/Marvel.svg`,
         logoHeight: `28px`,
         menuName: `Marvel`,
