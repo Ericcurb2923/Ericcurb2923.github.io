@@ -139,7 +139,7 @@ const projects = [
                     </p>
 
                     <p>
-                        Users could select customized artwork skins from DecalGirl and get the a bonus limited Iron Man 2 wallpaper depending on the redemption code they received. A select a number of users were granted access between both promotions via email. To claim the reward users accessed the website link to follow the step-by-step instructions. Users were prompted to enter their redemption code which would push users to either the Iron Man 2 funnel or DecalGirl’s custom art only funnel. Users selected their LG device first, then a custom skin and lastly entered their contact information to confirm for shipping.
+                        Users could select customized artwork skins from DecalGirl and get the a bonus limited Iron Man 2 wallpaper depending on the redemption code they received. A select a number of users were granted access between both promotions via email. To claim the reward users accessed the website link to follow the step-by-step instructions. Users were prompted to enter their redemption code which would push users to either. Users selected their LG device first, then a custom skin and lastly entered their contact information to confirm for shipping.
                     </p>
                 </div>`,
             },
