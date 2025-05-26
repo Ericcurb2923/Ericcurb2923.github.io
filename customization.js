@@ -140,7 +140,9 @@ const projects = [
                     <p>
                         Users could select customized artwork skins from DecalGirl and get the a bonus limited Iron Man 2 wallpaper depending on the redemption code they received. A select a number of users were granted access between both promotions via email. To claim the reward users accessed the website link to follow the step-by-step instructions. Users were prompted to enter their redemption code which would push users to either funnel. Users selected their LG device first, then a custom skin and lastly entered their contact information to confirm for shipping.
                     </p>
-               
+                    <p>
+                    </p>
+
                     <img class="desktop-only" src="./img/MarvelWFD.png" style="margin-top: 1em">
                     <img class="mobile-only" src="./img/MarvelWFM.png" style="margin-top: 1em">
                 </div>`,
