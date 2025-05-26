@@ -374,6 +374,7 @@ ul {
 
 .carousel-slide:first-child {
     display: block !important;
+    opacity: 1 !important;
 }
 
 .carousel-slide:not(:first-child) {

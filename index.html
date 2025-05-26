@@ -58,7 +58,6 @@
             document
                 .querySelector('#password-input')
                 .addEventListener('input', function (e) {
-                    console.log(e.target.value)
                     if (e.target.value === passKey) {
                         $('#password button').addClass('active');
                     } else {

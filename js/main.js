@@ -280,26 +280,26 @@ function load() {
         const currentIndex = parseInt(
             $('.timer-bubble.active').attr('slide-index')
         );
-        const currentSlide = $('.carousel-slide').get(currentIndex);
-        const targetSlide = $('.carousel-slide').get(index);
+        const $currentSlide = $(`.carousel-slide[slide-index="${currentIndex}"]`);
+        const $targetSlide = $(`.carousel-slide[slide-index="${index}"]`);
 
         if (index > currentIndex) {
-            $(targetSlide).css('display', 'block');
+            $targetSlide.css('display', 'block');
             setTimeout(function () {
-                $(targetSlide).css('opacity', '1');
+                $targetSlide.css('opacity', '1');
             }, 50);
             setTimeout(function () {
-                $(currentSlide).css('display', 'none');
+                $currentSlide.css('display', 'none');
                 if (currentIndex != 0) {
-                    $(currentSlide).css('opacity', '0');
+                    $currentSlide.css('opacity', '0');
                 }
             }, 700);
         } else if (index < currentIndex) {
-            $(targetSlide).css('display', 'block');
+            $targetSlide.css('display', 'block');
 
-            $(currentSlide).css('opacity', '0');
+            $currentSlide.css('opacity', '0');
             setTimeout(function () {
-                $(currentSlide).css('display', 'none');
+                $currentSlide.css('display', 'none');
             }, 650);
         }
     }
@@ -309,12 +309,16 @@ function load() {
 
     function callback() {
         const index = parseInt($('.timer-bubble.active').attr('slide-index'));
-        const nextIndex = index < $('.timer-bubble').length - 1 ? index + 1 : 0;
+        const firstIndex = parseInt($('.timer-bubble').get(0).getAttribute('slide-index'));
+        const lastIndex = parseInt($('.timer-bubble').get(-1).getAttribute('slide-index'));
+        //const nextIndex = index < $('.timer-bubble').length - 1 ? index + 1 : 0;
+        const nextIndex = index < lastIndex ? parseInt($('.timer-bubble.active').next().attr('slide-index')) : firstIndex;
 
         goToSlide(nextIndex);
 
         $('.timer-bubble.active').removeClass('active');
-        $('.timer-bubble').get(nextIndex).classList.add('active');
+        //$('.timer-bubble').get(nextIndex).classList.add('active');
+        $(`.timer-bubble[slide-index="${nextIndex}"]`).addClass('active');
 
         if (timer != null) {
             timer = null;
