@@ -145,7 +145,7 @@ const projects = [
             {
                 backgroundColor: '#ffffff',
                 content: `<div>
-                    <img class="desktop-only" src="./img/MarvelWFD.png" style="margin-top: 1em">
+                    <img class="desktop-only" src="./img/MarvelCarouselD.png" style="margin-top: 1em">
                     <img class="mobile-only" src="./img/MarvelWFM.png" style="margin-top: 1em">
                 </div>`,
             },
