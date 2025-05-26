@@ -25,7 +25,7 @@ const projects = [
         logo: `./img/Taxact.svg`,
         logoHeight: `24px`,
         menuName: `TaxAct CS`,
-        name: `TaxAct -  Shopping Experience`,
+        name: `TaxAct - Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
         carouselImage: './img/TaxActCarouselD.png',
         heroImage: './img/TaxActHeroD.png',
