@@ -1,5 +1,5 @@
 const passKey = `Studio2025`;
-const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <a href="mailto:info@curb.ws" class="desktop-only underline">Connect</a>.`;
+const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <span class="desktop-only"><a href="mailto:info@curb.ws" class="underline">Connect</a>.</span>`;
 const carouselInterval = 5;
 
 const about = `<div>
