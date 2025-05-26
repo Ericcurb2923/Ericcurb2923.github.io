@@ -137,9 +137,8 @@ const projects = [
                     <p>
                         I designed a dual-pathway funnel based on unique redemption codes. One pathway branded with Iron Man 2 visuals and the other with LG’s brand showcasing custom skins designs. I crafted initial wireframes for approval to ensure the design met the needs for both flows visually and functionally while working with stakeholders and an engineer. 
                     </p>
-
                     <p>
-                        Users could select customized artwork skins from DecalGirl and get the a bonus limited Iron Man 2 wallpaper depending on the redemption code they received. A select a number of users were granted access between both promotions via email. To claim the reward users accessed the website link to follow the step-by-step instructions. Users were prompted to enter their redemption code which would push users to either. Users selected their LG device first, then a custom skin and lastly entered their contact information to confirm for shipping.
+                        Users could select customized artwork skins from DecalGirl and get the a bonus limited Iron Man 2 wallpaper depending on the redemption code they received. A select a number of users were granted access between both promotions via email. To claim the reward users accessed the website link to follow the step-by-step instructions. Users were prompted to enter their redemption code which would push users to either funnel. Users selected their LG device first, then a custom skin and lastly entered their contact information to confirm for shipping.
                     </p>
                 </div>`,
             },
