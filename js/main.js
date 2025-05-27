@@ -66,7 +66,7 @@ function load() {
                 `<div class="carousel-slide" slide-index="${index}">
                 <img src="${project.carouselImage}" class="project-link-${index} desktop-only" alt="${project.name}: ${project.description}" role="button">
                 <div class="mobile-only">
-                    <img src="${project.heroImage}" class="project-link-${index}" role="button">
+                    <img src="${project.carouselImage}" class="project-link-${index}" role="button">
                     <div class="project-details">
                         <p class="project-name ease">${project.name}</p>
                         <p class="project-description ease">${project.description}</p>
