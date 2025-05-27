@@ -27,7 +27,7 @@ const projects = [
         menuName: `TaxAct CS`,
         name: `TaxAct - Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
-        carouselImage: './img/TaxActCarouselD.png',
+        carouselImage: './img/TaxActHeroM.png',
         heroImage: './img/TaxActHeroD.png',
         caseStudy:
             'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
@@ -106,7 +106,7 @@ const projects = [
         menuName: `Marvel`,
         name: `Marvel Iron Man 2 - LG`,
         description: `Creating a redemption website for Marvel, LG and DecalGirl.`,
-        carouselImage: './img/MarvelHeroD.png',
+        carouselImage: './img/MarvelHeroM.png',
         heroImage: './img/MarvelHeroD.png',
         caseStudy:'',
         sections: [
@@ -173,7 +173,7 @@ const projects = [
         menuName: `Westlaw CS`,
         name: `Thomson Reuters Westlaw`,
         description: `Launching Westlaw’s iPhone app and refreshing their iPad product experience to align.`,
-        carouselImage: './img/WestlawCarousel.png',
+        carouselImage: './img/WestlawHeroM.png',
         heroImage: './img/WestlawHeroD.png',
         caseStudy:
             'https://www.figma.com/proto/qESLRga2Goq4UJSbxCrygs/Westlaw-CS?page-id=0%3A1&node-id=1-24&p=f&viewport=383%2C445%2C0.25&t=OBAbaTxLmy9QLfuS-1&scaling=min-zoom&content-scaling=fixed',
@@ -252,7 +252,7 @@ const projects = [
         menuName: `Beacon`,
         name: `Beacon - RentSpree`,
         description: `Crafting a design language for a PropTech app by establishing their design system`,
-        carouselImage: './img/BeaconCarouselD.png',
+        carouselImage: './img/BeaconHeroM.png',
         heroImage: './img/BeaconHeroD.png',
         caseStudy: '',
         sections: [
