@@ -27,7 +27,7 @@ const projects = [
         menuName: `TaxAct CS`,
         name: `TaxAct - Shopping Experience`,
         description: `Increasing start rate by improving performance, SEO, accessibility and highlighting value props.`,
-        carouselImage: './img/BeaconHeroD.png',
+        carouselImage: './img/TaxActHeroM.png',
         heroImage: './img/TaxActHeroD.png',
         caseStudy:
             'https://www.figma.com/proto/RLE1VHpfSzpxdOOwRtH7lG/TaxAct-CS?page-id=0%3A1&node-id=[…]25&t=8xEcY8agLeF6XQjr-1&scaling=min-zoom&content-scaling=fixed',
