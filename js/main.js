@@ -76,11 +76,15 @@ function load() {
             );
 
             $('.timer').append(`
-            <div class="timer-bubble" slide-index="${index}">
-                <div class="timer-container"></div>
-                <div class="timer-value"></div>
-            </div>
-        `);
+                <div class="timer-bubble" slide-index="${index}">
+                    <div class="timer-container"></div>
+                    <div class="timer-value"></div>
+                </div>
+            `);
+
+            if (carouselMobileSpacing) {
+                $('.timer-mobile-spacing').css('height', carouselMobileSpacing);
+            }
 
             const caseStudyHTML =
                 project.caseStudy != ''
