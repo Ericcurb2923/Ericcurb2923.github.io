@@ -33,7 +33,7 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        This marked the launch of McDonald's renowned Karaoke Campaign, an innovative marketing initiative that aimed to foster community engagement and create an entertaining, family-friendly experience. McDonald's introduced Karaoke Night at select locations, which encouraged customers to participate in live karaoke sessions while enjoying their favorite McDonald's meals. To promote the campaign, the company aired promotional commercials, leveraged social media platforms, and implemented banner advertisements to spread awareness. This lighthearted campaign sought to underline McDonald's positioning as not just a fast-food chain, but also a place for fun and connection.
+                        This marked the launch of McDonald's renowned Karaoke Campaign, an innovative marketing initiative that aimed to foster community engagement and create an entertaining, family-friendly experience. McDonald's introduced Karaoke Night at select locations, which encouraged customers to participate in live karaoke sessions while enjoying their favorite McDonald's meals. To promote the campaign, the company aired promotional commercials, leveraged social media platforms, and implemented banner advertisements to spread awareness. This campaign sought to underline McDonald's positioning as not just a fast-food chain, but also a place for fun and connection.
                     </p>
                 </div>`,
             },
