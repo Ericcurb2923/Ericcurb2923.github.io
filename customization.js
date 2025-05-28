@@ -95,7 +95,7 @@ const projects = [
         logoHeight: `32px`,
     },
     {
-        active: false,
+        active: true,
         logo: `./img/FedEx.svg`,
         logoHeight: `28px`,
         menuName: `FedEx`,
