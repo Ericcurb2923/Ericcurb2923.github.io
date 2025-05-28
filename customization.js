@@ -16,9 +16,72 @@ const about = `<div>
 
 const projects = [
     {
-        active: false,
+        active: true,
         logo: `./img/McDonalds.svg`,
         logoHeight: `32px`,
+        menuName: `McDonalds`,
+        name: `McDonalds - Karaoke Campaign`,
+        description: `McDonald’s Presents Karaoke Night marketing campaign in select cities.`,
+        carouselImage: './img/McDonaldsHeroM.png',
+        heroImage: './img/McDonaldsHeroD.png',
+        caseStudy:'',
+        sections: [
+            {
+                label: 'Overview',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        This marked the launch of McDonald's renowned Karaoke Campaign, an innovative marketing initiative that aimed to foster community engagement and create an entertaining, family-friendly experience. McDonald's introduced Karaoke Night at select locations, which encouraged customers to participate in live karaoke sessions while enjoying their favorite McDonald's meals. To promote the campaign, the company aired promotional commercials, leveraged social media platforms, and implemented banner advertisements to spread awareness. This lighthearted campaign sought to underline McDonald's positioning as not just a fast-food chain, but also a place for fun and connection.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/McDonaldsOutdoorBnrD" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/McDonaldsOutdoorBnrM.png" style="margin-top: 1em">
+                </div>`,
+            },
+            {
+                label: 'Process',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                       I was contracted to create a McDonald’s Karaoke Campaign that was designed to create a fun and engaging experience for customers. While I collaborated with McDonald’s representative and created the concept for approval, select locations were transformed into karaoke-friendly venues equipped with microphones, sound systems, and digital song catalogs. The campaign targeted families, young adults, and social groups, aiming to foster community connections.  
+                    </p>
+                    <p>
+                       To promote the campaign, McDonald’s aired TV commercials showcasing families and friends enjoying karaoke nights. Social media platforms amplified the effort, encouraging user-generated content. In-store banners and posters also invited customers to participate. Additionally, participants received incentives like discounts and free menu items, making the event more appealing. 
+                    </p>
+                    <p>
+                       The campaign partnered with local artists and influencers to host karaoke nights, drawing larger crowds and creating a lively atmosphere. This combination of entertainment, marketing, and customer incentives ensured a well-rounded and impactful campaign rollout. 
+                    </p>
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#F4F5F8',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        The Karaoke Campaign yielded significant results, with participating locations seeing a 15%-20% increase in foot traffic and a 5%-10% boost in revenue. The events attracted families and younger audiences, encouraging them to enjoying their experience at McDonalds.
+                    </p>
+                    <p>
+                        Social media engagement was a standout success, with the generating thousands of posts and videos. This organic buzz enhanced McDonald’s brand perception as fun and community-oriented. Due to the campaign's success, McDonald’s adapted the concept for international markets, tailoring it to local cultures and music preferences.
+                    </p>
+                    <p>
+                        Ultimately, the Karaoke Campaign strengthened McDonald’s reputation as a creative and customer-focused brand, driving both engagement and sales. Below are a select few of the banner ads I designed for the campaign.
+                    </p>
+
+                    <img class="desktop-only" src="./img/McDonaldsWebAdsD.png">
+                    <img class="mobile-only" src="./img/McDonaldsWebAdsM.png">
+                </div>`,
+            },
+        ],
     },
     {
         active: true,
