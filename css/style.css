@@ -369,6 +369,7 @@ ul {
 }
 
 .carousel-slide {
+    background-color: #212121;
     transition: opacity 0.6s ease;
 }
 
