@@ -130,7 +130,8 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        FedEx provided a comprehensive guide that ensures the marketing banners maintain FedEx's strong brand identity while meeting technical requirements for high-quality production. This 50-page document facilitates the creation of cohesive marketing materials that align with FedEx's global brand strategy in order to maintain consistent standards across all platforms. 
+                        FedEx provided a comprehensive guide that ensures the marketing banners maintain FedEx's strong brand identity while meeting technical requirements for high-quality production. This 50-page document facilitates the creation of cohesive marketing materials that align with FedEx's global brand strategy in order to maintain consistent standards across all platforms. Familiarizing myself with the brand guidelines constituted the bulk of the preparatory work. 
+                        I worked with the FedEx representative to determine the strategy and go to market timeline. 
                     </p>
                 </div>`,
             },
@@ -141,7 +142,7 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        I successfully completed the project within the two-week deadline. The majority of the banners were static, with a dozen featuring animation. Familiarizing myself with the brand guidelines constituted the bulk of the preparatory work. Once I became versed in the guidelines, the creation of the campaign ads became efficient and exceeded expectations. Below are a selection of banners that showcase the assets developed during this project. 
+                        I completed the project within the two-week deadline. The majority of the banners were static, plus some animated as well, utilizing FedEx’s brand style guide. Below are a selection of banners that showcase the assets developed during this project that exceeded expectations.
                     </p>
 
                     <img class="desktop-only" src="./img/FedExFMD.png">
