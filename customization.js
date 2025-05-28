@@ -131,7 +131,7 @@ const projects = [
                 content: `<div>
                     <p>
                         FedEx provided a comprehensive guide that ensures the marketing banners maintain FedEx's strong brand identity while meeting technical requirements for high-quality production. This 50-page document facilitates the creation of cohesive marketing materials that align with FedEx's global brand strategy in order to maintain consistent standards across all platforms. Familiarizing myself with the brand guidelines constituted the bulk of the preparatory work. 
-                        I worked with the FedEx representative to determine the strategy and go to market timeline. 
+                        I worked with a FedEx PM to determine the strategy and go to market timeline. 
                     </p>
                 </div>`,
             },
