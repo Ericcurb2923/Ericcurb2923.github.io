@@ -98,6 +98,59 @@ const projects = [
         active: false,
         logo: `./img/FedEx.svg`,
         logoHeight: `28px`,
+        menuName: `FedEx`,
+        name: `FedEx Office Launch`,
+        description: `Marketing campaign:  Print from your office to our office.`,
+        carouselImage: './img/FedExHeroM.png',
+        heroImage: './img/FedExHeroD.png',
+        caseStudy:'',
+        sections: [
+            {
+                label: 'Overview',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        FedEx launched a marketing campaign to promote FedEx Office, with a series of web banners displayed on numerous high-traffic websites. The “Print from your office to our office” campaign encompassed a variety of elements, including design, messaging, and both animated and static banner ads. I created 40 banners working with product manager and a FedEx rep.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/FedExBPD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/FedExBPM.png" style="margin-top: 1em">
+                </div>`,
+            },
+            {
+                label: 'Process',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        FedEx provided a comprehensive guide that ensures the marketing banners maintain FedEx's strong brand identity while meeting technical requirements for high-quality production. This 50-page document facilitates the creation of cohesive marketing materials that align with FedEx's global brand strategy in order to maintain consistent standards across all platforms. 
+                    </p>
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#F4F5F8',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        I successfully completed the project within the two-week deadline. The majority of the banners were static, with a dozen featuring animation. Familiarizing myself with the brand guidelines constituted the bulk of the preparatory work. Once I became versed in the guidelines, the creation of the campaign ads became efficient and exceeded expectations. Below are a selection of banners that showcase the assets developed during this project. 
+                    </p>
+
+                    <img class="desktop-only" src="./img/FedExFMD.png">
+                    <img class="mobile-only" src="./img/FedExFMM.png">
+                </div>`,
+            },
+        ],
+    },
+
     },
     {
         active: true,
