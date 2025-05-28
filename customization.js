@@ -150,8 +150,6 @@ const projects = [
             },
         ],
     },
-
-    },
     {
         active: true,
         logo: `./img/Marvel.svg`,
