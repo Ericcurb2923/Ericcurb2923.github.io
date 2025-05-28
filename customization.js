@@ -40,7 +40,7 @@ const projects = [
             {
                 backgroundColor: '#f4f5f8',
                 content: `<div>
-                    <img class="desktop-only" src="./img/McDonaldsOutdoorBnrD" style="margin-top: 1em">
+                    <img class="desktop-only" src="./img/McDonaldsOutdoorBnrD.png" style="margin-top: 1em">
                     <img class="mobile-only" src="./img/McDonaldsOutdoorBnrM.png" style="margin-top: 1em">
                 </div>`,
             },
