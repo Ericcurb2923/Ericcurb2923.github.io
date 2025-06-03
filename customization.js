@@ -107,7 +107,7 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        TaxAct offers software specifically designed to assist users in efficiently preparing and filing their taxes, catering to both individuals and businesses. While it provides a variety of packages tailored to different tax situations, the platform’s unclear reasons to buy and inconsistent UI design patterns that have increased user drop-off rates, resulting in lower SUS and NPS ratings. Below are TaxAct’s charted scores and identified start rate drivers from the research. Full case study above.
+                        TaxAct offers software specifically designed to assist users in efficiently preparing and filing their taxes, catering to both individuals and businesses. While it provides a variety of packages tailored to different tax situations, the platform’s unclear reasons to buy and inconsistent UI design patterns that have increased user drop-off rates, resulting in lower SUS and NPS ratings. Below are TaxAct’s charted scores and identified start rate drivers from the research. Full case study link above.
                     </p>
                 </div>`,
             },
