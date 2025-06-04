@@ -163,8 +163,7 @@ const projects = [
         logoHeight: `32px`,
  menuName: `Hilton`,
         name: `Hilton - Hampton Hotels`,
-        description: `Find a Hampton hotel location near you marketing campaign. 
-.`,
+        description: `Find a Hampton hotel location near you marketing campaign.`,
         carouselImage: './img/HamptonHeroM.png',
         heroImage: './img/HamptonHeroD.png',
         caseStudy:'',
