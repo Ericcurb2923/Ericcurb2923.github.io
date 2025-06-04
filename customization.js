@@ -158,9 +158,69 @@ const projects = [
         ],
     },
     {
-        active: false,
+        active: true,
         logo: `./img/Hilton.svg`,
         logoHeight: `32px`,
+ menuName: `Hilton`,
+        name: `Hilton - Hampton Hotels`,
+        description: `Find a Hampton hotel location near you marketing campaign. 
+.`,
+        carouselImage: './img/HamptonHeroM.png',
+        heroImage: './img/HamptonHeroD.png',
+        caseStudy:'',
+        sections: [
+            {
+                label: 'Overview',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        I was contracted to design across the Hilton family of brands and Hampton Hotels was one of the most intricate campaigns I designed for. This initiative encompassed several landing pages and online marketing banners. Below are selection of the final banners, wireframes and a landing page from the campaign, as well as the process and final designs.
+                    </p>
+                </div>`,
+            },
+            {
+                backgroundColor: '#f4f5f8',
+                content: `<div>
+                    <img class="desktop-only" src="./img/HamptonWFD.png" style="margin-top: 1em">
+                    <img class="mobile-only" src="./img/HamptonWFM.png" style="margin-top: 1em">
+                </div>`,
+            },
+            {
+                label: 'Process',
+                hideMobileLabel: false,
+                backgroundColor: '#ffffff',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                       The project commenced with a business case aimed at enhancing engagement promotions for Hampton Hotels through Group Reservations and e-Events. During a collaborative working session, I proposed the concept of a location-based map utilizing an array to identify the number of Hampton hotels by state. This interactive map would connect users to booking options for Group Reservations or e-Events activities during the summer months.  
+                    </p>
+                    
+                    <p>
+                       Over a three-month timeline, I collaborated closely with the project manager and two engineers to develop wireframe concepts, prototypes, and high-fidelity designs. Together, we built an array structure that included essential details such as hotel name, number of hotels, longitude, latitude, state, and city. This structure enabled the map to visually represent which states hosted Hampton hotels, the total number of locations, and their respective cities. 
+                    </p>
+                    
+                    <p>
+                       Throughout the wireframing phase, I worked diligently with the engineer to address functional details, ensuring that the concept was feasible. We conducted thorough testing of the prototype prior to finalizing the design. 
+                    </p>
+                </div>`,
+            },
+            {
+                label: 'Outcome',
+                hideMobileLabel: false,
+                backgroundColor: '#F4F5F8',
+                textColor: '#212121',
+                content: `<div>
+                    <p>
+                        I successfully delivered the final designs for the interactive landing page and promotional banners ahead of schedule. These designs not only adhered to Hilton's brand standards for Hampton Hotels but also performed exceptionally well among users making group reservations and those selecting Hampton locations through e-Events. A three percent increase underscored the effectiveness of our collaborative efforts in enhancing user engagement.
+                    </p>
+
+                    <img class="desktop-only" src="./img/HamptonFDD.png">
+                    <img class="mobile-only" src="./img/HamptonFDM.png">
+                </div>`,
+            },
+        ],
     },
     {
         active: true,
