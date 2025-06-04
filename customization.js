@@ -175,7 +175,7 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        I was contracted to design across the Hilton family of brands and Hampton Hotels was one of the most intricate campaigns I designed for. This initiative encompassed several landing pages and online marketing banners. Below are selection of the final banners, wireframes and a landing page from the campaign, as well as the process and final designs.
+                        I was contracted to design across the Hilton family of brands and Hampton Hotels was one of the most intricate campaigns I designed for. This initiative encompassed several landing pages and online marketing banners. Below are a select few of the final banners, wireframes and a landing page from the campaign, as well as the process and final designs.
                     </p>
                 </div>`,
             },
