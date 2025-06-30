@@ -333,7 +333,7 @@ const projects = [
                 textColor: '#212121',
                 content: `<div>
                     <p>
-                        DecalGirl experienced a measurable increase in brand recognition, with a 7% rise in international website traffic during the campaign period. Marvel successfully tied the Iron Man 2 movie promotion to a tangible product, enhancing fan engagement and merchandise sales. The dual-pathway funnel design ensured a seamless user experience, reducing drop-off rates by 4% compared to previous campaigns. The step-by-step instructions and redemption process were praised for their clarity, contributing to the campaign's overall success.
+                        DecalGirl experienced a measurable increase in brand recognition, with a 7% rise in international website traffic during the campaign period. Marvel successfully tied the Iron Man 2 movie promotion to a tangible product, enhancing fan engagement and merchandise sales. The dual-pathway funnel design ensured a seamless user experience, reducing drop-off rates by 4% compared to previous campaigns. The step-by-step instructions and redemption process contributed to the campaign's overall success.
                     </p>
                     <p>
                         By aligning the goals of all partners and leveraging the strengths of each brand, the campaign not only met but exceeded expectations, setting a benchmark for future collaborative promotions.
