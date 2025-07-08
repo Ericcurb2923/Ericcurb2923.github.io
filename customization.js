@@ -415,7 +415,7 @@ const projects = [
                     </ol>
 
                     <p>
-                        The iOS apps addressed the needs for legal services companies, law practices, government employees, and educational institutions, through organized access to legal information from Westlaw anywhere. As a result, the Westlaw iPhone app won over 13 awards for the best legal research app. Check out the case study link for an in depth analysis of the project. Also view in App Store.
+                        The iOS apps addressed the needs for legal services companies, law practices, government employees, and educational institutions, through organized access to legal information from Westlaw anywhere. As a result, the Westlaw iPhone app won over 13 awards for the best legal research app. View case study link above for an in depth analysis of the project. Also view in App Store.
                     </p>
 
                     <img class="desktop-only" src="./img/WestlawFMD.png">
