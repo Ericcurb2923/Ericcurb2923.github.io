@@ -148,7 +148,7 @@ const projects = [
                     </ol>
 
                     <p>
-                        The mobile-first approach I created was embraced and implemented into a responsive grid system, which established a cohesive design language for future product features and provided a flexible framework for secondary and tertiary pages. This also enabled our team to integrated a CMS for the homepage, landing and partnership pages. This transition dramatically reduced our time to market and enabled us to deliver scalable, high-quality designs more efficiently. Select the case study link above for a in depth analysis of the full process.
+                        The mobile-first approach I created was embraced and implemented into a responsive grid system, which established a cohesive design language for future product features and provided a flexible framework for secondary and tertiary pages. This also enabled our team to integrated a CMS for the homepage, landing and partnership pages. This transition dramatically reduced our time to market and enabled us to deliver scalable, high-quality designs more efficiently. Select the case study link above for an in depth analysis of the full process.
                     </p>
 
                     <img class="desktop-only" src="./img/TaxActFMD.png">
@@ -415,7 +415,7 @@ const projects = [
                     </ol>
 
                     <p>
-                        The iOS apps addressed the needs for legal services companies, law practices, government employees, and educational institutions, through organized access to legal information from Westlaw anywhere. As a result, the Westlaw iPhone app won over 13 awards for the best legal research app. Check out the case study link for an indepth analysis of the project. Also view in App Store.
+                        The iOS apps addressed the needs for legal services companies, law practices, government employees, and educational institutions, through organized access to legal information from Westlaw anywhere. As a result, the Westlaw iPhone app won over 13 awards for the best legal research app. Check out the case study link for an in depth analysis of the project. Also view in App Store.
                     </p>
 
                     <img class="desktop-only" src="./img/WestlawFMD.png">
@@ -478,7 +478,7 @@ const projects = [
                 textColor: '#ffffff',
                 content: `<div>
                     <p>
-                        Beacon created a clear design language that improves user experience with easy-to-use scalable components and guidelines for RentSpree. A governance process was introduced to ensure all elements are functional and user-friendly through UX and Dev reviews. This design system has also increased cross functional collaboration ensuring consistency and an elevated product quality that support RentSpree's goal of simplifying the rental experience for all users. Select the case study link above for a in depth analysis of the project.
+                        Beacon created a clear design language that improves user experience with easy-to-use scalable components and guidelines for RentSpree. A governance process was introduced to ensure all elements are functional and user-friendly through UX and Dev reviews. This design system has also increased cross functional collaboration ensuring consistency and an elevated product quality that support RentSpree's goal of simplifying the rental experience for all users. Select the case study link above for an in depth analysis of the project.
                     </p>
 
                     <img class="desktop-only" src="./img/BeaconMocksD.png">
