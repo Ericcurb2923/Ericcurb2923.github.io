@@ -433,7 +433,7 @@ const projects = [
         description: `Crafting a design language for a PropTech app by establishing their design system`,
         carouselImage: './img/BeaconHeroM.png',
         heroImage: './img/BeaconHeroD.png',
-        caseStudy: '',
+        caseStudy: 'https://www.figma.com/proto/isDCdyShYTJgwRwJMir42Y/Beam-CS?page-id=0%3A1&node-id=1-2&viewport=426%2C615%2C0.25&t=ov41KbWwZQHHTuAz-1&scaling=contain&content-scaling=fixed',
         sections: [
             {
                 label: 'Problem',
