@@ -428,7 +428,7 @@ const projects = [
         active: true,
         logo: `./img/Beacon.svg`,
         logoHeight: `24px`,
-        menuName: `Beacon`,
+        menuName: `Beacon CS`,
         name: `Beacon - RentSpree`,
         description: `Crafting a design language for a PropTech app by establishing their design system`,
         carouselImage: './img/BeaconHeroM.png',
