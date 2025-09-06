@@ -1,4 +1,4 @@
-const passKey = `Unlock`;
+const passKey = ``;
 const siteDescription = `Working with remarkable teams worldwide to envision, design and develop exceptional products. <span class="desktop-only"><a href="mailto:info@curb.ws" class="underline">Let's connect</a>.</span>`;
 const carouselInterval = 5;
 const carouselMobileSpacing = `24px`;
@@ -488,3 +488,4 @@ const projects = [
         ],
     },
 ];
+
