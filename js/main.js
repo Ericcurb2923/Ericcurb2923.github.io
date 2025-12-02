@@ -199,7 +199,7 @@ function load() {
             const projectIndex = event.target.classList[0].slice(-1);
             const $project = $(`#project-${projectIndex}`);
 
-            if (!(localStorage.getItem('passKey') == passKey)) {
+            if (passKey != '' && !(localStorage.getItem('passKey') == passKey)) {
                 $('body').css('overflow', 'hidden');
 
                 const $password = $('#password');
@@ -355,3 +355,4 @@ function load() {
 $(document).ready(function () {
     load();
 });
+
