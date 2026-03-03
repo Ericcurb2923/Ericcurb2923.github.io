@@ -11,7 +11,7 @@ const LOADER = document.getElementById("loader");
    INTRO SETTINGS
 ============================================================ */
 
-let introEnabled   = true;
+let introEnabled   = false;
 let introMinWidth  = 1024;
 
 let homeSwiper = null;
