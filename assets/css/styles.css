@@ -79,6 +79,7 @@ h1{
 
 img{
     max-width: 100%;
+    pointer-events: none;
 }
 /* header */
 
