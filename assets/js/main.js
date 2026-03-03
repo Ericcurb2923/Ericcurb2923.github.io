@@ -3,10 +3,6 @@
 ============================================================ */
 
 let BASE = "";
-const parts = location.pathname.split("/").filter(Boolean);
-if (parts[0] === "eric-portfolio") {
-    BASE = "/eric-portfolio";
-}
 
 const VIEW   = document.getElementById("view");
 const LOADER = document.getElementById("loader");
